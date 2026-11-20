@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f8f6ee">
+  <meta name="description" content="Grace's Creative Process Journal — a living record of a semester of learning, making and reflecting.">
+  <title>Creative Process Journal — Grace Wong</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
+  <style>
+    :root{--paper:#f8f6ee;--white:#fffefa;--ink:#23354b;--muted:#687786;--blue:#b7d9ee;--blue-deep:#3979a5;--blue-pale:#e8f3f9;--yellow:#ffe57c;--yellow-pale:#fff5c8;--coral:#eb9c86;--line:#e9e4d6;--green:#56776d;--shadow:0 16px 45px rgba(48,66,82,.08);--serif:"DM Serif Display",Georgia,serif;--sans:"DM Sans",Arial,sans-serif}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--sans);font-size:15px;line-height:1.65}button,input,textarea{font:inherit}button{cursor:pointer}a{color:inherit;text-decoration:none}::selection{background:var(--yellow)}
+    .shell{min-height:100vh;max-width:1600px;margin:auto;display:grid;grid-template-columns:248px minmax(0,1fr)}
+    .rail{height:100vh;position:sticky;top:0;padding:32px 22px 24px 30px;display:flex;flex-direction:column;border-right:1px solid var(--line);background:rgba(248,246,238,.9);z-index:4}
+    .brand{display:flex;align-items:center;gap:12px;margin-bottom:50px}.brand-mark{width:38px;height:38px;border-radius:14px;background:var(--blue);display:grid;place-items:center;font-size:20px;box-shadow:inset 0 -4px 0 rgba(58,120,164,.12)}.brand-name{font-family:var(--serif);font-size:16px;line-height:1.1}.brand-small{display:block;font-size:10px;color:var(--muted);letter-spacing:.1em;text-transform:uppercase;margin-top:4px}
+    .nav-label{font-size:10px;font-weight:700;letter-spacing:.16em;color:#99a1a6;text-transform:uppercase;padding:0 12px;margin-bottom:10px}.nav{display:grid;gap:5px}.nav button{border:0;background:transparent;color:#657383;text-align:left;padding:11px 12px;border-radius:12px;display:flex;align-items:center;gap:12px;font-weight:600;font-size:13px;transition:.2s}.nav button:hover{background:var(--white);color:var(--ink)}.nav button.active{background:var(--blue-pale);color:var(--blue-deep)}.nav .icon{font-size:17px;width:20px;text-align:center}.rail-bottom{margin-top:auto}.rail-note{background:var(--yellow-pale);border-radius:16px;padding:16px;font-size:12px;color:#76653b}.rail-note strong{display:block;color:var(--ink);font-size:13px;margin-bottom:4px}.rail-foot{font-size:10px;color:#9aa2a5;margin:18px 8px 0}
+    main{min-width:0;padding:0 54px 70px;max-width:1340px;width:100%;margin:0 auto}.topbar{height:84px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--line);margin-bottom:28px}.crumb{font-size:12px;color:var(--muted)}.crumb span{color:var(--ink);font-weight:700}.top-actions{display:flex;align-items:center;gap:12px}.searchbox{display:flex;align-items:center;gap:8px;background:var(--white);border:1px solid var(--line);padding:8px 12px;border-radius:12px;width:220px}.searchbox input{border:0;outline:0;background:transparent;width:100%;font-size:12px;color:var(--ink)}.searchbox input::placeholder{color:#9aa3aa}.avatar{width:34px;height:34px;border-radius:50%;background:var(--yellow);display:grid;place-items:center;font-size:12px;font-weight:700}
+    .page{display:none;animation:fade .35s ease}.page.active{display:block}@keyframes fade{from{opacity:0;transform:translateY(5px)}to{opacity:1;transform:none}}
+    .eyebrow{display:flex;align-items:center;gap:9px;color:var(--blue-deep);font-size:10px;text-transform:uppercase;font-weight:700;letter-spacing:.17em}.eyebrow:before{content:"";width:20px;height:1px;background:var(--coral)}
+    h1,h2,h3,p{margin-top:0}h1,h2,.serif{font-family:var(--serif);font-weight:400;letter-spacing:-.025em}h1{font-size:clamp(42px,5.5vw,76px);line-height:1.03;margin:17px 0 18px}h2{font-size:clamp(30px,3vw,42px);line-height:1.14;margin:10px 0 12px}h3{font-size:16px;line-height:1.35;margin:0 0 8px}.lead{font-size:16px;color:#5e6b78;max-width:530px;line-height:1.8}.section-head{display:flex;align-items:end;justify-content:space-between;gap:20px;margin:48px 0 20px}.section-head p{color:var(--muted);font-size:13px;margin:4px 0 0}.pill{border:1px solid var(--line);background:var(--white);border-radius:99px;padding:8px 13px;font-size:11px;color:var(--muted);white-space:nowrap}
+    .hero{display:grid;grid-template-columns:1.13fr .87fr;gap:28px;align-items:stretch;min-height:400px}.hero-copy{padding:38px 0 30px}.hero-copy h1 span{color:var(--blue-deep);font-style:italic}.hero-actions{display:flex;align-items:center;gap:12px;margin-top:25px}.btn{border:0;border-radius:999px;padding:12px 18px;font-size:12px;font-weight:700;display:inline-flex;align-items:center;gap:9px;transition:transform .2s,box-shadow .2s}.btn:hover{transform:translateY(-2px);box-shadow:0 8px 20px rgba(40,70,90,.13)}.btn-primary{background:var(--ink);color:white}.btn-soft{background:var(--white);border:1px solid var(--line);color:var(--ink)}.hero-art{position:relative;min-height:380px;border-radius:26px;background:#dcecf4;overflow:hidden;display:flex;align-items:center;justify-content:center}.hero-art:before,.hero-art:after{content:"";position:absolute;border-radius:50%;background:rgba(255,255,255,.38)}.hero-art:before{width:310px;height:310px;right:-70px;top:-100px}.hero-art:after{width:230px;height:230px;left:-80px;bottom:-70px;background:rgba(255,229,124,.62)}.sun{position:absolute;width:75px;height:75px;border-radius:50%;background:var(--yellow);top:40px;right:55px;box-shadow:0 0 0 12px rgba(255,255,255,.2)}.art-paper{position:relative;z-index:1;width:76%;max-width:340px;background:var(--white);border-radius:5px;padding:26px 28px 24px;transform:rotate(-4deg);box-shadow:0 22px 38px rgba(36,61,77,.16)}.paper-top{display:flex;justify-content:space-between;color:#8a969d;font-size:9px;text-transform:uppercase;letter-spacing:.14em;border-bottom:1px solid var(--line);padding-bottom:12px}.art-paper h3{font:26px/1.15 var(--serif);margin:18px 0 6px}.paper-sub{font-size:11px;color:var(--muted)}.scribble{height:72px;margin-top:18px;background:repeating-linear-gradient(172deg,transparent 0 12px,rgba(80,130,157,.24) 12px 14px,transparent 14px 25px);border-bottom:2px solid var(--blue)}.paper-foot{display:flex;justify-content:space-between;align-items:center;margin-top:14px;font-size:10px;color:var(--muted)}.paper-dot{display:flex;gap:4px}.paper-dot i{width:6px;height:6px;border-radius:50%;background:var(--coral)}.paper-dot i:nth-child(2){background:var(--yellow)}.paper-dot i:nth-child(3){background:var(--blue-deep)}.spark{position:absolute;z-index:2;color:#fff;font-size:32px}.spark.one{left:15%;top:23%}.spark.two{right:16%;bottom:17%;font-size:23px;color:var(--coral)}
+    .stats{display:grid;grid-template-columns:repeat(3,1fr);background:var(--white);border:1px solid var(--line);border-radius:18px;padding:18px 22px;margin-top:25px}.stat{padding:2px 18px;border-right:1px solid var(--line)}.stat:first-child{padding-left:0}.stat:last-child{border:0}.stat b{font:24px var(--serif);display:block}.stat span{font-size:10px;color:var(--muted)}
+    .category-grid{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:12px}.category-card{background:var(--white);border:1px solid var(--line);border-radius:17px;padding:17px;min-height:150px;text-align:left;transition:.22s;position:relative;overflow:hidden;color:var(--ink)}.category-card:hover{transform:translateY(-4px);box-shadow:var(--shadow);border-color:#c6ddeb}.category-card .card-icon{font-size:23px}.category-card h3{font-size:13px;margin:14px 0 5px}.category-card p{font-size:10px;line-height:1.55;color:var(--muted);margin:0}.arrow{position:absolute;right:14px;top:15px;color:#aab5bb;font-size:15px}
+    .feature-row{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:17px}.feature-card{border-radius:20px;padding:23px 25px;min-height:170px;position:relative;overflow:hidden}.feature-card.yellow{background:var(--yellow-pale)}.feature-card.blue{background:var(--blue-pale)}.feature-card .eyebrow{font-size:9px}.feature-card h3{font:23px var(--serif);max-width:270px;margin:12px 0}.feature-card p{font-size:11px;color:#687786;max-width:300px;margin:0}.feature-emoji{position:absolute;right:24px;bottom:14px;font-size:47px;opacity:.8}
+    .page-intro{padding:35px 0 25px;border-bottom:1px solid var(--line)}.page-intro .lead{font-size:14px}.week-top{display:flex;align-items:center;justify-content:space-between;margin:25px 0 15px}.week-count{font-size:11px;color:var(--muted)}.week-count b{color:var(--ink)}.week-card{display:grid;grid-template-columns:1fr 220px;gap:25px;background:var(--white);border:1px solid var(--line);border-radius:22px;padding:30px;min-height:260px;box-shadow:0 8px 28px rgba(48,66,82,.04)}.week-tag{display:inline-flex;background:var(--blue-pale);color:var(--blue-deep);border-radius:99px;padding:6px 10px;font-size:10px;font-weight:700}.week-card h2{font-size:34px;margin:15px 0 10px}.week-card p{color:var(--muted);font-size:13px;max-width:650px}.prompt{background:#fbf4d8;border-radius:16px;padding:19px;align-self:stretch;display:flex;flex-direction:column;justify-content:center}.prompt span{font-size:9px;text-transform:uppercase;letter-spacing:.14em;color:#9b8144;font-weight:700}.prompt p{font:17px/1.45 var(--serif);color:#5c533f;margin:9px 0 0}.carousel-controls{display:flex;align-items:center;gap:8px}.round{width:34px;height:34px;border-radius:50%;border:1px solid var(--line);background:var(--white);color:var(--ink)}.round:hover{background:var(--blue-pale)}.dots{display:flex;gap:5px;margin:0 7px}.dots button{border:0;padding:0;width:6px;height:6px;border-radius:50%;background:#d4d9da}.dots button.active{background:var(--blue-deep);width:19px;border-radius:8px}
+    .notes-panel{margin-top:25px;background:#f0f5f1;border-radius:19px;padding:22px}.notes-panel h3{font:21px var(--serif)}.notes-panel p{font-size:11px;color:var(--muted);margin-bottom:13px}.note-form{display:flex;gap:9px;align-items:stretch}.note-form textarea{flex:1;resize:vertical;min-height:68px;border:1px solid #dfe8df;border-radius:12px;background:var(--white);padding:11px 13px;outline:none;font-size:12px}.note-form textarea:focus{border-color:var(--blue-deep)}.note-list{display:grid;gap:8px;margin-top:14px}.saved-note{white-space:pre-wrap;background:var(--white);border-radius:11px;padding:12px 14px;font-size:12px;color:#526171}.saved-note small{display:block;color:#98a1a6;font-size:9px;margin-bottom:5px}
+    .tile-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}.tile{background:var(--white);border:1px solid var(--line);border-radius:18px;padding:21px;min-height:170px}.tile .tile-icon{font-size:19px}.tile h3{margin-top:13px}.tile p{font-size:12px;color:var(--muted);margin:0;max-width:450px}.tile small{display:block;color:#a0a8a8;font-size:9px;letter-spacing:.1em;text-transform:uppercase;margin-top:15px}
+    .ethos-list{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.ethos-item{display:flex;gap:14px;align-items:flex-start;background:var(--white);border:1px solid var(--line);padding:16px;border-radius:15px}.ethos-num{flex:0 0 31px;height:31px;border-radius:10px;background:var(--yellow-pale);display:grid;place-items:center;font:16px var(--serif);color:#8d7040}.ethos-item h3{font-size:13px;margin:1px 0 5px}.ethos-item p{font-size:11px;color:var(--muted);margin:0}
+    .timeline{border-left:1px solid #c6dce8;margin:25px 0 0 10px;padding-left:24px;display:grid;gap:14px}.timeline-item{position:relative;background:var(--white);border:1px solid var(--line);border-radius:16px;padding:18px 20px}.timeline-item:before{content:"";position:absolute;left:-30px;top:22px;width:11px;height:11px;border-radius:50%;background:var(--coral);border:3px solid var(--paper)}.timeline-item:nth-child(even):before{background:var(--blue-deep)}.timeline-item small{font-size:9px;text-transform:uppercase;letter-spacing:.12em;color:var(--blue-deep);font-weight:700}.timeline-item h3{margin:6px 0}.timeline-item p{font-size:12px;color:var(--muted);margin:0}
+    .footer{border-top:1px solid var(--line);margin-top:60px;padding-top:20px;display:flex;justify-content:space-between;color:#9aa2a4;font-size:10px}.empty-search{display:none;background:var(--white);border:1px dashed #d9d4c8;border-radius:16px;padding:25px;text-align:center;color:var(--muted);font-size:13px}
+    @media(max-width:1100px){.shell{grid-template-columns:205px minmax(0,1fr)}.rail{padding-left:20px;padding-right:15px}main{padding-left:34px;padding-right:34px}.category-grid{grid-template-columns:repeat(3,minmax(0,1fr))}.hero{grid-template-columns:1fr 1fr}.hero-art{min-height:340px}}
+    @media(max-width:760px){.shell{display:block;padding-bottom:75px}.rail{height:auto;position:fixed;top:auto;bottom:0;left:0;right:0;padding:7px 8px calc(7px + env(safe-area-inset-bottom));border:0;border-top:1px solid var(--line);background:rgba(255,254,250,.96);backdrop-filter:blur(14px)}.brand,.nav-label,.rail-bottom{display:none}.nav{display:flex;justify-content:space-around;gap:0}.nav button{flex:1;justify-content:center;flex-direction:column;gap:1px;padding:6px 2px;border-radius:10px;font-size:8px;line-height:1.2}.nav .icon{font-size:17px}.topbar{height:62px;margin-bottom:12px}.crumb{font-size:10px}.searchbox{width:145px;padding:7px 9px}.searchbox input{font-size:10px}main{padding:0 20px 35px}.hero{grid-template-columns:1fr;gap:15px}.hero-copy{padding:28px 0 8px}.hero-art{min-height:290px}.art-paper{max-width:300px}.hero-copy h1{font-size:49px}.lead{font-size:14px}.stats{padding:14px 12px}.stat{padding:2px 10px}.stat b{font-size:20px}.stat span{font-size:9px}.category-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:9px}.category-card{min-height:135px;padding:14px}.category-card h3{margin-top:9px}.feature-row{grid-template-columns:1fr}.section-head{margin-top:35px}.week-card{grid-template-columns:1fr;padding:21px;gap:14px}.week-card h2{font-size:29px}.prompt{min-height:115px}.tile-grid,.ethos-list{grid-template-columns:1fr}.page-intro{padding-top:25px}.footer{margin-top:40px}.feature-emoji{font-size:36px}.section-head .pill{font-size:9px;padding:7px 9px}}
+    @media(prefers-reduced-motion:reduce){*,*:before,*:after{scroll-behavior:auto!important;animation-duration:.01ms!important;transition-duration:.01ms!important}}
+  </style>
+</head>
+<body>
+<div class="shell">
+  <aside class="rail">
+    <a class="brand" href="#" data-page="home"><span class="brand-mark">✳</span><span class="brand-name">Creative Process<span class="brand-small">Journal · Semester in progress</span></span></a>
+    <div class="nav-label">Your journal</div>
+    <nav class="nav" aria-label="Journal sections">
+      <button class="active" data-page="home"><span class="icon">⌂</span><span>Home</span></button>
+      <button data-page="weekly"><span class="icon">◷</span><span>Weekly Lessons</span></button>
+      <button data-page="group"><span class="icon">✳</span><span>Group Project</span></button>
+      <button data-page="reflection"><span class="icon">✎</span><span>Reflection</span></button>
+      <button data-page="maggie"><span class="icon">⌁</span><span>Maggie's Brief</span></button>
+      <button data-page="ethos"><span class="icon">✧</span><span>10 Ethos</span></button>
+    </nav>
+    <div class="rail-bottom"><div class="rail-note"><strong>A work in progress ✦</strong>Little notes from a semester of trying, learning and making.</div><div class="rail-foot">Made with curiosity · 2026</div></div>
+  </aside>
+  <main>
+    <header class="topbar">
+      <div class="crumb">Creative Process Journal <span id="crumbCurrent">/ Home</span></div>
+      <div class="top-actions"><label class="searchbox" aria-label="Search journal"><span>⌕</span><input id="searchInput" type="search" placeholder="Search the journal…"></label><div class="avatar" aria-label="Grace">G</div></div>
+    </header>
+
+    <section class="page active" id="page-home" aria-labelledby="home-title">
+      <div class="hero">
+        <div class="hero-copy">
+          <div class="eyebrow">A semester of ideas, in progress</div>
+          <h1 id="home-title">Creative<br><span>Process</span><br>Journal</h1>
+          <p class="lead">Hi, I’m Grace. This is my little corner to collect what I’m learning in class, the ideas I’m making with my group, and the reflections I want to carry with me.</p>
+          <div class="hero-actions"><button class="btn btn-primary" data-page="weekly">Explore the journal <span>↗</span></button><button class="btn btn-soft" data-page="reflection">Read my reflections</button></div>
+          <div class="stats"><div class="stat"><b>05</b><span>journal chapters</span></div><div class="stat"><b>10</b><span>ethos to explore</span></div><div class="stat"><b>∞</b><span>ways to keep learning</span></div></div>
+        </div>
+        <div class="hero-art" aria-label="Illustration of a journal page">
+          <div class="sun"></div><span class="spark one">✳</span><span class="spark two">✦</span>
+          <div class="art-paper"><div class="paper-top"><span>Field notes</span><span>Vol. 01</span></div><h3>Learning as<br>we go.</h3><div class="paper-sub">A semester, one small discovery at a time.</div><div class="scribble"></div><div class="paper-foot"><span>stay curious</span><span class="paper-dot"><i></i><i></i><i></i></span></div></div>
+        </div>
+      </div>
+      <div class="section-head"><div><div class="eyebrow">Find your way around</div><h2>Five chapters, one journey</h2><p>Choose a chapter to explore the notes and reflections inside.</p></div><span class="pill">Scroll, explore, reflect&nbsp; ↘</span></div>
+      <div class="category-grid searchable">
+        <button class="category-card" data-page="weekly"><span class="arrow">↗</span><span class="card-icon">📚</span><h3>Weekly Lessons</h3><p>Class notes, key ideas and takeaways from each week.</p></button>
+        <button class="category-card" data-page="group"><span class="arrow">↗</span><span class="card-icon">🧩</span><h3>Group Project</h3><p>From first questions to the things we make together.</p></button>
+        <button class="category-card" data-page="reflection"><span class="arrow">↗</span><span class="card-icon">🪞</span><h3>Overall Reflection</h3><p>Looking back at the semester and what has changed.</p></button>
+        <button class="category-card" data-page="maggie"><span class="arrow">↗</span><span class="card-icon">✉️</span><h3>Maggie’s Brief</h3><p>A place to unpack the brief, its questions and direction.</p></button>
+        <button class="category-card" data-page="ethos"><span class="arrow">↗</span><span class="card-icon">✨</span><h3>10 Ethos</h3><p>Principles and prompts to guide the creative process.</p></button>
+      </div>
+      <div class="feature-row">
+        <article class="feature-card yellow"><div class="eyebrow">A note to self</div><h3>Progress can be a little messy.</h3><p>Leave room for the questions, the drafts, and the happy accidents.</p><span class="feature-emoji">🌱</span></article>
+        <article class="feature-card blue"><div class="eyebrow">Keep exploring</div><h3>There’s more than one way forward.</h3><p>Follow an idea through the journal and see where it leads.</p><span class="feature-emoji">🪁</span></article>
+      </div>
+    </section>
+
+    <section class="page" id="page-weekly">
+      <div class="page-intro"><div class="eyebrow">Chapter 01 · Learning log</div><h1>Weekly Lessons</h1><p class="lead">A week-by-week space for the ideas, questions and small discoveries from class.</p></div>
+      <div class="week-top"><div class="week-count">LESSON <b id="weekNumber">01</b> <span id="weekTotal">/ 04</span></div><div class="carousel-controls"><button class="round" id="prevWeek" aria-label="Previous lesson">←</button><div class="dots" id="weekDots"></div><button class="round" id="nextWeek" aria-label="Next lesson">→</button></div></div>
+      <article class="week-card searchable" id="weekCard"><div><span class="week-tag" id="weekTag">Start here</span><h2 id="weekTitle">A page for week one</h2><p id="weekDescription">Use this space to capture what stood out in class: a new idea, a moment that shifted your perspective, or a question you’re still thinking about. Your own lesson notes can be added below.</p></div><aside class="prompt"><span>A prompt to begin</span><p id="weekPrompt">What idea from class do I want to keep thinking about?</p></aside></article>
+      <section class="notes-panel" data-notes="weekly"><h3>Leave a note in this chapter ✎</h3><p>Your notes are saved in this browser on this device, so you can build the journal as your semester unfolds.</p><form class="note-form"><textarea aria-label="Write a weekly lesson note" placeholder="A thought, takeaway or question from class…"></textarea><button class="btn btn-primary" type="submit">Save note</button></form><div class="note-list"></div></section>
+    </section>
+
+    <section class="page" id="page-group">
+      <div class="page-intro"><div class="eyebrow">Chapter 02 · Making together</div><h1>Group Project</h1><p class="lead">A shared process is full of ideas, decisions, experiments and little pivots. Keep a record of how it unfolds.</p></div>
+      <div class="section-head"><div><h2>The process, as it happens</h2><p>Starter points for documenting your group’s journey.</p></div><span class="pill">Teamwork in progress ✳</span></div>
+      <div class="timeline searchable">
+        <article class="timeline-item"><small>01 · The beginning</small><h3>Where did our first idea come from?</h3><p>Capture the question, inspiration or conversation that got the group started.</p></article>
+        <article class="timeline-item"><small>02 · Finding a direction</small><h3>What did we decide to explore?</h3><p>Note the different possibilities you considered and what helped the team choose a direction.</p></article>
+        <article class="timeline-item"><small>03 · Making & testing</small><h3>What did we try, and what happened?</h3><p>Save the experiments, feedback and useful surprises that shaped your work.</p></article>
+        <article class="timeline-item"><small>04 · Looking back</small><h3>What did we learn from making together?</h3><p>Reflect on the roles, conversations and moments that made a difference.</p></article>
+      </div>
+      <section class="notes-panel" data-notes="group"><h3>Add to the group story ✎</h3><p>Save a moment, decision or reflection from your collaboration.</p><form class="note-form"><textarea aria-label="Write a group project note" placeholder="What happened, and what did you learn from it?"></textarea><button class="btn btn-primary" type="submit">Save note</button></form><div class="note-list"></div></section>
+    </section>
+
+    <section class="page" id="page-reflection">
+      <div class="page-intro"><div class="eyebrow">Chapter 03 · Looking back</div><h1>Overall Reflection</h1><p class="lead">Pause for a moment. Notice what has grown, what still feels uncertain, and what you’d like to take into the next chapter.</p></div>
+      <div class="section-head"><div><h2>Reflection prompts</h2><p>There’s no right order. Start wherever feels true.</p></div></div>
+      <div class="tile-grid searchable">
+        <article class="tile"><span class="tile-icon">🌤️</span><h3>A moment that stayed with me</h3><p>Which class, conversation or piece of work keeps coming back to mind? Why?</p><small>Look back · Notice</small></article>
+        <article class="tile"><span class="tile-icon">🧭</span><h3>Something I see differently</h3><p>Has an idea, process or assumption shifted for you over the semester?</p><small>Change · Perspective</small></article>
+        <article class="tile"><span class="tile-icon">🌿</span><h3>A stretch beyond the familiar</h3><p>What challenged you, and what did that experience teach you about yourself?</p><small>Challenge · Growth</small></article>
+        <article class="tile"><span class="tile-icon">🔭</span><h3>What I want to carry forward</h3><p>Which skill, question or way of working do you want to keep practising?</p><small>Next steps · Possibility</small></article>
+      </div>
+      <section class="notes-panel" data-notes="reflection"><h3>Write your reflection ✎</h3><p>Your reflections stay in this browser and can be added to any time.</p><form class="note-form"><textarea aria-label="Write an overall reflection" placeholder="Looking back on my semester…"></textarea><button class="btn btn-primary" type="submit">Save reflection</button></form><div class="note-list"></div></section>
+    </section>
+
+    <section class="page" id="page-maggie">
+      <div class="page-intro"><div class="eyebrow">Chapter 04 · Reading the brief</div><h1>Maggie’s Brief</h1><p class="lead">A dedicated space to untangle the brief: what it asks, what it makes you wonder, and the possibilities you see in it.</p></div>
+      <div class="section-head"><div><h2>Start with a closer look</h2><p>Use these prompts to make the brief your own.</p></div></div>
+      <div class="tile-grid searchable">
+        <article class="tile"><span class="tile-icon">🔎</span><h3>What is the brief asking?</h3><p>Restate its core challenge in your own words. What feels essential?</p><small>Understand · Unpack</small></article>
+        <article class="tile"><span class="tile-icon">❔</span><h3>What questions does it raise?</h3><p>Collect the things you want to clarify, investigate or challenge.</p><small>Question · Explore</small></article>
+        <article class="tile"><span class="tile-icon">💡</span><h3>Where might it lead?</h3><p>Capture early ideas without needing to decide which one is right yet.</p><small>Imagine · Generate</small></article>
+        <article class="tile"><span class="tile-icon">📝</span><h3>What will success look like?</h3><p>Think about who the work is for and what you hope it will make possible.</p><small>Purpose · Intention</small></article>
+      </div>
+      <section class="notes-panel" data-notes="maggie"><h3>Make sense of the brief ✎</h3><p>Add your interpretation, questions or ideas as they take shape.</p><form class="note-form"><textarea aria-label="Write a note about Maggie's brief" placeholder="The part of the brief I keep thinking about…"></textarea><button class="btn btn-primary" type="submit">Save note</button></form><div class="note-list"></div></section>
+    </section>
+
+    <section class="page" id="page-ethos">
+      <div class="page-intro"><div class="eyebrow">Chapter 05 · Ways of working</div><h1>10 Ethos</h1><p class="lead">Ten gentle reminders for the creative process. Come back to one when you need a new perspective or a little encouragement.</p></div>
+      <div class="section-head"><div><h2>Keep these close</h2><p>Small principles to guide the way you learn, think and make.</p></div></div>
+      <div class="ethos-list searchable">
+        <article class="ethos-item"><span class="ethos-num">01</span><div><h3>Stay curious</h3><p>Let questions open doors to ideas you haven’t met yet.</p></div></article>
+        <article class="ethos-item"><span class="ethos-num">02</span><div><h3>Make room for play</h3><p>Experimentation is part of the work, not a detour from it.</p></div></article>
+        <article class="ethos-item"><span class="ethos-num">03</span><div><h3>Begin before you’re ready</h3><p>A small first step can teach you more than waiting for a perfect plan.</p></div></article>
+        <article class="ethos-item"><span class="ethos-num">04</span><div><h3>Listen with care</h3><p>Pay attention to people, context and the ideas between the lines.</p></div></article>
+        <article class="ethos-item"><span class="ethos-num">05</span><div><h3>Notice what’s already there</h3><p>Look closely at the everyday before reaching for the obvious answer.</p></div></article>
+        <article class="ethos-item"><span class="ethos-num">06</span><div><h3>Welcome the unexpected</h3><p>A surprise can be a clue. Follow it a little further.</p></div></article>
+        <article class="ethos-item"><span class="ethos-num">07</span><div><h3>Share ideas generously</h3><p>Good work grows through exchange, kindness and building on each other.</p></div></article>
+        <article class="ethos-item"><span class="ethos-num">08</span><div><h3>Learn by making</h3><p>Put an idea into the world so you can see what it can become.</p></div></article>
+        <article class="ethos-item"><span class="ethos-num">09</span><div><h3>Let reflection guide you</h3><p>Look back to understand what to keep, change or try next.</p></div></article>
+        <article class="ethos-item"><span class="ethos-num">10</span><div><h3>Keep going, gently</h3><p>Creative practice is built one thoughtful step at a time.</p></div></article>
+      </div>
+      <section class="notes-panel" data-notes="ethos"><h3>Which ethos speaks to you? ✎</h3><p>Save a thought about the principles you want to bring into your process.</p><form class="note-form"><textarea aria-label="Write a note about the ethos" placeholder="One ethos I want to practise is…"></textarea><button class="btn btn-primary" type="submit">Save note</button></form><div class="note-list"></div></section>
+    </section>
+    <div class="empty-search" id="emptySearch">No notes or prompts match that search yet. Try another word.</div>
+    <footer class="footer"><span>Creative Process Journal · Grace Wong</span><span>A living document · Made with curiosity ✳</span></footer>
+  </main>
+</div>
+<script>
+  const pages=["home","weekly","group","reflection","maggie","ethos"];
+  const labels={home:"Home",weekly:"Weekly Lessons",group:"Group Project",reflection:"Overall Reflection",maggie:"Maggie's Brief",ethos:"10 Ethos"};
+  function showPage(name){if(!pages.includes(name))name="home";document.querySelectorAll(".page").forEach(p=>p.classList.toggle("active",p.id==="page-"+name));document.querySelectorAll("[data-page]").forEach(b=>b.classList.toggle("active",b.dataset.page===name));document.getElementById("crumbCurrent").textContent="/ "+labels[name];document.getElementById("searchInput").value="";filterSearch("");window.scrollTo({top:0,behavior:"smooth"});}
+  document.querySelectorAll("[data-page]").forEach(b=>b.addEventListener("click",()=>showPage(b.dataset.page)));
+  const lessons=[
+    {tag:"Start here",title:"A page for week one",description:"Use this space to capture what stood out in class: a new idea, a moment that shifted your perspective, or a question you’re still thinking about. Your own lesson notes can be added below.",prompt:"What idea from class do I want to keep thinking about?"},
+    {tag:"Notice & collect",title:"Gathering the little things",description:"Save observations, references and fragments that spark your curiosity. A collection can be the beginning of a direction.",prompt:"What did I notice this week that I might have overlooked before?"},
+    {tag:"Try something",title:"Learning by making",description:"Document an experiment, draft or attempt. Keep the useful discoveries alongside the parts you might want to try differently.",prompt:"What did I learn by making or testing an idea?"},
+    {tag:"Look back",title:"What I’m taking with me",description:"Pause to connect the week’s ideas. Notice what changed in your thinking and what you want to carry into the next class.",prompt:"What is one thing I want to remember from this week?"}
+  ];
+  let currentWeek=0;
+  function renderWeek(){const w=lessons[currentWeek];document.getElementById("weekNumber").textContent=String(currentWeek+1).padStart(2,"0");document.getElementById("weekTotal").textContent="/ "+String(lessons.length).padStart(2,"0");document.getElementById("weekTag").textContent=w.tag;document.getElementById("weekTitle").textContent=w.title;document.getElementById("weekDescription").textContent=w.description;document.getElementById("weekPrompt").textContent=w.prompt;document.getElementById("weekDots").innerHTML=lessons.map((_,i)=>'<button aria-label="Go to lesson '+(i+1)+'" class="'+(i===currentWeek?"active":"")+'" data-week="'+i+'"></button>').join("");document.querySelectorAll("[data-week]").forEach(b=>b.addEventListener("click",()=>{currentWeek=Number(b.dataset.week);renderWeek()}));}
+  document.getElementById("prevWeek").addEventListener("click",()=>{currentWeek=(currentWeek+lessons.length-1)%lessons.length;renderWeek()});document.getElementById("nextWeek").addEventListener("click",()=>{currentWeek=(currentWeek+1)%lessons.length;renderWeek()});renderWeek();
+  const storeKey="grace-creative-journal-notes-v1";
+  function getNotes(){try{return JSON.parse(localStorage.getItem(storeKey)||"{}")}catch{return {}}}
+  function drawNotes(panel){const data=getNotes()[panel.dataset.notes]||[];panel.querySelector(".note-list").innerHTML=data.map(n=>'<article class="saved-note"><small>'+new Date(n.date).toLocaleString(undefined,{dateStyle:"medium",timeStyle:"short"})+'</small>'+escapeHtml(n.text)+'</article>').join("");}
+  function escapeHtml(s){return s.replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]))}
+  document.querySelectorAll(".notes-panel").forEach(panel=>{drawNotes(panel);panel.querySelector("form").addEventListener("submit",e=>{e.preventDefault();const area=panel.querySelector("textarea"),text=area.value.trim();if(!text)return;const all=getNotes(),key=panel.dataset.notes;all[key]=all[key]||[];all[key].unshift({text,date:new Date().toISOString()});localStorage.setItem(storeKey,JSON.stringify(all));area.value="";drawNotes(panel);})});
+  function filterSearch(q){q=q.trim().toLowerCase();const current=document.querySelector(".page.active");let visible=0;current.querySelectorAll(".searchable > *, .searchable").forEach(el=>{if(el.classList.contains("searchable"))return;const hit=!q||el.innerText.toLowerCase().includes(q);el.style.display=hit?"":"none";if(hit)visible++});document.getElementById("emptySearch").style.display=q&&visible===0?"block":"none";}
+  document.getElementById("searchInput").addEventListener("input",e=>filterSearch(e.target.value));
+</script>
+</body>
+</html>
