@@ -387,6 +387,9 @@
     @media(max-width:900px){.group-phase-gallery figure{height:200px}.group-phase-gallery img{height:100%}}
     @media(max-width:760px){.group-phase-gallery figure{height:170px}.group-phase-gallery img{height:100%}}
     @media(max-width:480px){.group-phase-gallery figure{height:145px}.group-phase-gallery img{height:100%}}
+  
+    @supports(width:1cqw){.group-phase-gallery figure:first-child img{position:absolute;top:50%;left:50%;width:100cqh;height:100cqw;max-width:none;object-fit:cover;object-position:center;transform:translate(-50%,-50%) rotate(90deg)}}
+    .group-phase-gallery figure:nth-child(3) img,.group-phase-gallery figure:nth-child(6) img{object-fit:contain;object-position:center}
   </style>
 </head>
 <body>
