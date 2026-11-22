@@ -406,6 +406,19 @@
     .group-phase-gallery figure:not(.group-photo-portrait){grid-column:span 1;aspect-ratio:1.35;height:auto}
     .group-phase-gallery .group-photo-portrait{grid-column:span 2;aspect-ratio:4/5;height:auto}
     @media(max-width:760px){.group-phase-gallery{grid-template-columns:repeat(2,minmax(0,1fr))}.group-phase-gallery figure:not(.group-photo-portrait){grid-column:span 1;aspect-ratio:1.1}.group-phase-gallery .group-photo-portrait{grid-column:span 2;aspect-ratio:4/5}}
+  
+    .group-phase-gallery{grid-template-columns:minmax(0,1fr) minmax(0,1fr) minmax(0,.56fr);grid-template-rows:auto auto;align-items:stretch}
+    .group-phase-gallery figure{height:auto;aspect-ratio:1.35}
+    .group-phase-gallery figure:nth-child(1){grid-column:1;grid-row:1}
+    .group-phase-gallery figure:nth-child(2){grid-column:2;grid-row:1}
+    .group-phase-gallery figure:nth-child(3){grid-column:1;grid-row:2}
+    .group-phase-gallery figure:nth-child(4){grid-column:2;grid-row:2}
+    .group-phase-gallery .group-photo-portrait{grid-column:3;aspect-ratio:.78/1}
+    .group-phase-gallery .group-photo-portrait:nth-child(5){grid-row:1}
+    .group-phase-gallery .group-photo-portrait:nth-child(6){grid-row:2}
+    .group-phase-gallery figure img{height:100%;object-fit:cover;object-position:center}
+    @supports(width:1cqw){.group-phase-gallery figure:first-child img{position:absolute;top:50%;left:50%;width:100cqh;height:100cqw;max-width:none;object-fit:cover;transform:translate(-50%,-50%) rotate(90deg)}}
+    @media(max-width:760px){.group-phase-gallery{grid-template-columns:repeat(2,minmax(0,1fr));grid-template-rows:auto}.group-phase-gallery figure:nth-child(1),.group-phase-gallery figure:nth-child(2),.group-phase-gallery figure:nth-child(3),.group-phase-gallery figure:nth-child(4){grid-column:auto;grid-row:auto;aspect-ratio:1.2}.group-phase-gallery .group-photo-portrait,.group-phase-gallery .group-photo-portrait:nth-child(5),.group-phase-gallery .group-photo-portrait:nth-child(6){grid-column:auto;grid-row:auto;aspect-ratio:3/4}}
   </style>
 </head>
 <body>
