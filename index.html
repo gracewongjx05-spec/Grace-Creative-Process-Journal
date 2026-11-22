@@ -290,6 +290,20 @@
     @media(min-width:1100px){.category-grid{grid-template-columns:repeat(6,minmax(0,1fr))}}
     .category-card[data-page="reflection"]{background:#ffe0ad}
     .category-card[data-page="exhibition"]{background:#dff3e7}
+
+    .ethos-reflection-card{margin:20px 0 26px;padding:28px 32px;border:2px solid #c8dff1;border-radius:26px;background:linear-gradient(135deg,#eaf6ff 0%,#fffaf0 100%);box-shadow:0 7px 0 rgba(76,141,181,.12)}
+    .ethos-reflection-card .eyebrow{color:#397fa8}
+    .ethos-reflection-card h2{margin:8px 0 12px;color:var(--ink);font:700 25px/1.2 var(--round)}
+    .ethos-reflection-card p{max-width:1000px;color:#455b6a;font-size:14px;line-height:1.8;margin:0 0 12px}
+    .ethos-reflection-card p:last-child{margin-bottom:0}
+    .ethos-reflection-card blockquote{margin:16px 0;padding:14px 20px;border-left:5px solid #ed7658;border-radius:0 16px 16px 0;background:#fff0df;color:#a15345;font:italic 22px/1.35 var(--serif)}
+    .ethos-principle-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin:0 0 26px;padding:0;list-style:none}
+    .ethos-principle{display:flex;align-items:flex-start;gap:13px;min-height:74px;padding:16px 18px;border:2px solid #fff;border-radius:19px;background:#e8f4ff;box-shadow:0 4px 0 rgba(83,52,71,.06)}
+    .ethos-principle:nth-child(4n+2){background:#fff5b5}.ethos-principle:nth-child(4n+3){background:#f1eaff}.ethos-principle:nth-child(4n){background:#ffe6dc}
+    .ethos-principle:last-child{grid-column:1/-1}
+    .ethos-principle span{display:grid;place-items:center;flex:0 0 31px;height:31px;border-radius:50%;background:#fffefa;color:#e6532e;font:800 12px var(--round)}
+    .ethos-principle strong{padding-top:4px;color:var(--ink);font:700 15px/1.45 var(--round)}
+    @media(max-width:760px){.ethos-reflection-card{padding:20px 18px}.ethos-principle-grid{grid-template-columns:1fr;gap:9px}.ethos-principle:last-child{grid-column:auto}.ethos-principle{padding:14px}}
   </style>
 </head>
 <body>
@@ -590,21 +604,31 @@
     </section>
 
     <section class="page" id="page-ethos">
-      <div class="page-intro"><div class="eyebrow">Chapter 04 · Ways of working</div><h1>10 Ethos</h1><p class="lead">Ten gentle reminders for the creative process. Come back to one when you need a new perspective or a little encouragement.</p></div><div class="guide-callout"><svg class="mascot-svg pose-point" viewBox="0 0 100 120" aria-hidden="true"><use href="#mascot-base"></use><path class="limb" d="M77 56Q85 54 92 49Q98 45 101 49Q104 53 98 58Q90 65 80 68Z"/><path d="M94 35l2 5 5 1-5 2-2 5-2-5-5-2 5-1z" fill="#ff9a83"/></svg><div class="guide-bubble"><strong>Pick a little reminder</strong>Which ethos would you like to carry with you today?</div></div>
-      <div class="section-head"><div><h2>Keep these close</h2><p>Small principles to guide the way you learn, think and make.</p></div></div>
-      <div class="ethos-list searchable">
-        <article class="ethos-item"><span class="ethos-num">01</span><div><h3>Stay curious</h3><p>Let questions open doors to ideas you haven’t met yet.</p></div></article>
-        <article class="ethos-item"><span class="ethos-num">02</span><div><h3>Make room for play</h3><p>Experimentation is part of the work, not a detour from it.</p></div></article>
-        <article class="ethos-item"><span class="ethos-num">03</span><div><h3>Begin before you’re ready</h3><p>A small first step can teach you more than waiting for a perfect plan.</p></div></article>
-        <article class="ethos-item"><span class="ethos-num">04</span><div><h3>Listen with care</h3><p>Pay attention to people, context and the ideas between the lines.</p></div></article>
-        <article class="ethos-item"><span class="ethos-num">05</span><div><h3>Notice what’s already there</h3><p>Look closely at the everyday before reaching for the obvious answer.</p></div></article>
-        <article class="ethos-item"><span class="ethos-num">06</span><div><h3>Welcome the unexpected</h3><p>A surprise can be a clue. Follow it a little further.</p></div></article>
-        <article class="ethos-item"><span class="ethos-num">07</span><div><h3>Share ideas generously</h3><p>Good work grows through exchange, kindness and building on each other.</p></div></article>
-        <article class="ethos-item"><span class="ethos-num">08</span><div><h3>Learn by making</h3><p>Put an idea into the world so you can see what it can become.</p></div></article>
-        <article class="ethos-item"><span class="ethos-num">09</span><div><h3>Let reflection guide you</h3><p>Look back to understand what to keep, change or try next.</p></div></article>
-        <article class="ethos-item"><span class="ethos-num">10</span><div><h3>Keep going, gently</h3><p>Creative practice is built one thoughtful step at a time.</p></div></article>
-      </div>
-      <section class="notes-panel" data-notes="ethos"><h3>Which ethos speaks to you? ✎</h3><p>Save a thought about the principles you want to bring into your process.</p><form class="note-form"><textarea aria-label="Write a note about the ethos" placeholder="One ethos I want to practise is…"></textarea><button class="btn btn-primary" type="submit">Save note</button></form><div class="note-list"></div></section>
+      <div class="page-intro"><div class="eyebrow">Chapter 04 · Ways of working</div><h1>10 Ethos</h1><p class="lead">My principles for social design, shaped by care, patience, and the work of inclusion.</p></div>
+      <div class="guide-callout"><svg class="mascot-svg pose-point" viewBox="0 0 100 120" aria-hidden="true"><use href="#mascot-base"></use><path class="limb" d="M77 56Q85 54 92 49Q98 45 101 49Q104 53 98 58Q90 65 80 68Z"/><path d="M94 35l2 5 5 1-5 2-2 5-2-5-5-2 5-1z" fill="#ff9a83"/></svg><div class="guide-bubble"><strong>Care is part of the practice</strong>Return to these principles when the work feels uncertain or uphill.</div></div>
+
+      <section class="ethos-reflection-card">
+        <div class="eyebrow">My reflection</div>
+        <h2>Keep showing up with care</h2>
+        <p>I resonate deeply with these ethos because working in the social design space demands genuine care, patience, and love. Meaningful change never happens overnight—it takes real endurance and quiet strength to keep pushing for ideas that not everyone around you immediately sees or believes in. Personally, I believe there is something beautiful in everyone and everything, and part of our role is helping others see from that perspective too. For others to recognize that beauty, though, we have to see it and believe in it firmly within ourselves first. It also means remembering not to give up when things feel uncertain or uphill, because those moments of struggle and resistance are often where the deepest learning and growth happen.</p>
+        <blockquote>“You must have a big heart.”</blockquote>
+        <p>That comment really stayed with me. Being in this space requires intentionally making room for care—not just as a temporary project mindset, but as a way of showing up for people. I hope more people learn to care in that same way, and I feel genuinely grateful to be surrounded by classmates who bring that same passion and commitment to the table.</p>
+      </section>
+
+      <div class="section-head"><div><h2>My 10 Principles as a Social Designer</h2><p>Principles to carry into the process, the relationships, and the work.</p></div></div>
+      <ol class="ethos-principle-grid searchable">
+        <li class="ethos-principle"><span>01</span><strong>Care, patience, and vision</strong></li>
+        <li class="ethos-principle"><span>02</span><strong>Deeply worth the wait</strong></li>
+        <li class="ethos-principle"><span>03</span><strong>Reveal what's beautiful within</strong></li>
+        <li class="ethos-principle"><span>04</span><strong>Calm presence</strong></li>
+        <li class="ethos-principle"><span>05</span><strong>Create room for authenticity and diversity</strong></li>
+        <li class="ethos-principle"><span>06</span><strong>Pain, resistance, and uncertainty are part of the birth of transformation</strong></li>
+        <li class="ethos-principle"><span>07</span><strong>Allowing people to see not just users, but fellow humans</strong></li>
+        <li class="ethos-principle"><span>08</span><strong>Empathy meets imagination</strong></li>
+        <li class="ethos-principle"><span>09</span><strong>Safety, dignity, and grace</strong></li>
+        <li class="ethos-principle"><span>10</span><strong>People can bring their full selves without fear of judgement or harm</strong></li>
+      </ol>
+      <section class="notes-panel" data-notes="ethos"><h3>Which principle speaks to you? ✎</h3><p>Save a thought about the principles you want to bring into your process.</p><form class="note-form"><textarea aria-label="Write a note about the ethos" placeholder="One principle I want to practise is…"></textarea><button class="btn btn-primary" type="submit">Save note</button></form><div class="note-list"></div></section>
     </section>
 
     <section class="page" id="page-exhibition">
