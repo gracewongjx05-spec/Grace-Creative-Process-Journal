@@ -109,6 +109,13 @@
     .week1-gallery-title img.week1-gallery-extra{aspect-ratio:2.25/1}
     .week1-gallery-title img.week1-playground-inline{aspect-ratio:16/9}
     @media(max-width:760px){.week1-gallery-main img{height:auto;min-height:0;aspect-ratio:4/3}.week1-gallery-title{gap:10px}}
+
+    .week2-photo-gallery{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin:22px 26px 12px;padding:12px;border:2px solid #9bad94;border-radius:24px;background:#f0f3e9;box-shadow:0 6px 0 rgba(88,117,87,.14);align-items:stretch}
+    .week2-photo-gallery figure{margin:0;min-width:0;overflow:hidden;border:1px solid rgba(66,91,69,.16);border-radius:14px;background:#f7f6ed}
+    .week2-photo-gallery img{display:block;width:100%;height:100%;aspect-ratio:4/3;object-fit:cover}
+    .week2-photo-gallery .week2-photo-portrait img{object-fit:contain;background:#ecefe4}
+    @media(max-width:760px){.week2-photo-gallery{margin:14px 12px 8px;padding:9px;gap:9px;border-radius:18px}}
+    @media(max-width:540px){.week2-photo-gallery{grid-template-columns:1fr}.week2-photo-gallery img{aspect-ratio:16/10}.week2-photo-gallery .week2-photo-portrait img{aspect-ratio:4/3;object-fit:contain}}
   </style>
 </head>
 <body>
@@ -226,11 +233,12 @@
             <span class="week-spark" aria-hidden="true">✳</span>
           </header>
 
-          <figure class="week-photo-placeholder week-photo-two" role="img" aria-label="Landscape photo placeholder for Week 2">
-            <div class="photo-placeholder-art"><span class="photo-sun"></span><span class="photo-hill"></span><span class="photo-hill second"></span><span class="photo-mark">▧</span></div>
-            <figcaption><span class="photo-label">WEEK 02 · IMAGE PLACEHOLDER</span><strong>Experiences of access & perception</strong><small>Landscape photos can be added here when they’re ready.</small></figcaption>
-            <span class="photo-ratio">16:9</span>
-          </figure>
+          <div class="week2-photo-gallery" aria-label="Week 2 class and access experience photographs">
+            <figure><img src="assets/week-2/class-photo-1.png" alt="Classmates gathered for a group photo in a classroom" loading="lazy"></figure>
+            <figure><img src="assets/week-2/class-photo-2.png" alt="The class gathered together in the classroom" loading="lazy"></figure>
+            <figure class="week2-photo-portrait"><img src="assets/week-2/blindfold-activity.png" alt="A student taking part in a blindfolded mobility experience at a train platform" loading="lazy"></figure>
+            <figure class="week2-photo-portrait"><img src="assets/week-2/wheelchair-experience.png" alt="A classmate seated in a wheelchair in a public indoor space" loading="lazy"></figure>
+          </div>
 
           <div class="week-moments">
             <article class="moment-card moment-lilac"><div class="moment-number">01</div><div class="moment-copy"><span class="moment-kicker">WHEELCHAIR EXPERIENCE</span><h3>Small changes in a space can feel huge</h3><p>Navigating public spaces in a wheelchair was physically exhausting. Subtle floor bumps, tight spaces, and crowds suddenly became major obstacles. It also showed me how vulnerable it feels to rely on someone else to push you, and how deeply meaningful a small, respectful offer of help can be.</p></div><span class="moment-doodle" aria-hidden="true">✦</span></article>
