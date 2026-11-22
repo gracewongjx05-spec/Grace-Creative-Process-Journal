@@ -286,6 +286,10 @@
     .week-shortcut span{white-space:nowrap}
     .weeks-coming{width:auto;flex:0 0 auto;white-space:nowrap}
     @media(max-width:760px){.week-shortcuts{align-items:flex-start;flex-direction:column;gap:8px}.week-shortcut-list{width:100%;justify-content:flex-start;overflow-x:auto}.weeks-coming{width:auto}}
+
+    @media(min-width:1100px){.category-grid{grid-template-columns:repeat(6,minmax(0,1fr))}}
+    .category-card[data-page="reflection"]{background:#ffe0ad}
+    .category-card[data-page="exhibition"]{background:#dff3e7}
   </style>
 </head>
 <body>
@@ -308,9 +312,10 @@
       <button class="active" data-page="home"><span class="icon">⌂</span><span>Home</span></button>
       <button data-page="weekly"><span class="icon">◷</span><span>Weekly Lessons</span></button>
       <button data-page="group"><span class="icon">✳</span><span>Group Project</span></button>
-      <button data-page="reflection"><span class="icon">✎</span><span>Reflection</span></button>
       <button data-page="maggie"><span class="icon">⌁</span><span>Maggie's Brief</span></button>
       <button data-page="ethos"><span class="icon">✧</span><span>10 Ethos</span></button>
+      <button data-page="exhibition"><span class="icon">▧</span><span>Exhibition</span></button>
+      <button data-page="reflection"><span class="icon">✎</span><span>Overall Reflection</span></button>
     </nav>
     <div class="rail-bottom"><div class="rail-note"><strong>A work in progress ✦</strong>Little notes from a semester of trying, learning and making.</div><div class="rail-foot">Made with curiosity · 2026</div></div>
   </aside>
@@ -327,20 +332,21 @@
           <h1 id="home-title">Creative<br><span>Process</span><br>Journal</h1>
           <p class="lead">Hi, I’m Grace. This is my little corner to collect what I’m learning in class, the ideas I’m making with my group, and the reflections I want to carry with me.</p>
           <div class="hero-actions"><button class="btn btn-primary" data-page="weekly">Explore the journal <span>↗</span></button><button class="btn btn-soft" data-page="reflection">Read my reflections</button></div>
-          <div class="stats"><div class="stat"><b>05</b><span>journal chapters</span></div><div class="stat"><b>10</b><span>ethos to explore</span></div><div class="stat"><b>∞</b><span>ways to keep learning</span></div></div>
+          <div class="stats"><div class="stat"><b>06</b><span>journal chapters</span></div><div class="stat"><b>10</b><span>ethos to explore</span></div><div class="stat"><b>∞</b><span>ways to keep learning</span></div></div>
         </div>
         <div class="hero-art" aria-label="Illustration of a journal page">
           <div class="sun"></div><span class="spark one">✳</span><span class="spark two">✦</span>
           <div class="art-paper"><div class="paper-top"><span>Field notes</span><span>Vol. 01</span></div><h3>Learning as<br>we go.</h3><div class="paper-sub">A semester, one small discovery at a time.</div><div class="scribble"></div><div class="paper-foot"><span>stay curious</span><span class="paper-dot"><i></i><i></i><i></i></span></div></div><div class="guide-callout home-guide"><svg class="mascot-svg pose-wave" viewBox="0 0 100 120" aria-hidden="true"><use href="#mascot-base"></use><path class="limb" d="M72 48Q77 39 79 29Q81 19 87 17Q94 16 96 22Q98 28 94 38Q90 48 82 56Z"/></svg><div class="guide-bubble"><strong>Hi, Grace!</strong>Let’s save those little discoveries.</div></div>
         </div>
       </div>
-      <div class="section-head"><div><div class="eyebrow">Find your way around</div><h2>Five chapters, one journey</h2><p>Choose a chapter to explore the notes and reflections inside.</p></div><span class="pill">Scroll, explore, reflect&nbsp; ↘</span></div>
+      <div class="section-head"><div><div class="eyebrow">Find your way around</div><h2>Six chapters, one journey</h2><p>Choose a chapter to explore the notes and reflections inside.</p></div><span class="pill">Scroll, explore, reflect&nbsp; ↘</span></div>
       <div class="category-grid searchable">
         <button class="category-card" data-page="weekly"><span class="arrow">↗</span><span class="card-icon">📚</span><h3>Weekly Lessons</h3><p>Class notes, key ideas and takeaways from each week.</p></button>
         <button class="category-card" data-page="group"><span class="arrow">↗</span><span class="card-icon">🧩</span><h3>Group Project</h3><p>From first questions to the things we make together.</p></button>
-        <button class="category-card" data-page="reflection"><span class="arrow">↗</span><span class="card-icon">🪞</span><h3>Overall Reflection</h3><p>Looking back at the semester and what has changed.</p></button>
         <button class="category-card" data-page="maggie"><span class="arrow">↗</span><span class="card-icon">✉️</span><h3>Maggie’s Brief</h3><p>A place to unpack the brief, its questions and direction.</p></button>
         <button class="category-card" data-page="ethos"><span class="arrow">↗</span><span class="card-icon">✨</span><h3>10 Ethos</h3><p>Principles and prompts to guide the creative process.</p></button>
+        <button class="category-card" data-page="exhibition"><span class="arrow">↗</span><span class="card-icon">🖼️</span><h3>Exhibition</h3><p>A place to share outcomes and the process behind them.</p></button>
+        <button class="category-card" data-page="reflection"><span class="arrow">↗</span><span class="card-icon">🪞</span><h3>Overall Reflection</h3><p>Looking back at the semester and what has changed.</p></button>
       </div>
       <div class="feature-row">
         <article class="feature-card yellow"><div class="eyebrow">A note to self</div><h3>Progress can be a little messy.</h3><p>Leave room for the questions, the drafts, and the happy accidents.</p><span class="feature-emoji">🌱</span></article>
@@ -571,20 +577,8 @@
       <section class="notes-panel" data-notes="group"><h3>Add to the group story ✎</h3><p>Save a moment, decision or reflection from your collaboration.</p><form class="note-form"><textarea aria-label="Write a group project note" placeholder="What happened, and what did you learn from it?"></textarea><button class="btn btn-primary" type="submit">Save note</button></form><div class="note-list"></div></section>
     </section>
 
-    <section class="page" id="page-reflection">
-      <div class="page-intro"><div class="eyebrow">Chapter 03 · Looking back</div><h1>Overall Reflection</h1><p class="lead">Pause for a moment. Notice what has grown, what still feels uncertain, and what you’d like to take into the next chapter.</p></div><div class="guide-callout"><svg class="mascot-svg pose-think" viewBox="0 0 100 120" aria-hidden="true"><use href="#mascot-base"></use><path class="limb" d="M77 59Q85 55 79 49Q75 45 72 49L67 57Q65 63 71 65Z"/><circle cx="80" cy="34" r="4" fill="#fff06a" stroke="#151515" stroke-width="2"/><circle cx="88" cy="26" r="6" fill="#fff06a" stroke="#151515" stroke-width="2"/></svg><div class="guide-bubble"><strong>Take a little pause</strong>There’s no wrong place to start reflecting.</div></div>
-      <div class="section-head"><div><h2>Reflection prompts</h2><p>There’s no right order. Start wherever feels true.</p></div></div>
-      <div class="tile-grid searchable">
-        <article class="tile"><span class="tile-icon">🌤️</span><h3>A moment that stayed with me</h3><p>Which class, conversation or piece of work keeps coming back to mind? Why?</p><small>Look back · Notice</small></article>
-        <article class="tile"><span class="tile-icon">🧭</span><h3>Something I see differently</h3><p>Has an idea, process or assumption shifted for you over the semester?</p><small>Change · Perspective</small></article>
-        <article class="tile"><span class="tile-icon">🌿</span><h3>A stretch beyond the familiar</h3><p>What challenged you, and what did that experience teach you about yourself?</p><small>Challenge · Growth</small></article>
-        <article class="tile"><span class="tile-icon">🔭</span><h3>What I want to carry forward</h3><p>Which skill, question or way of working do you want to keep practising?</p><small>Next steps · Possibility</small></article>
-      </div>
-      <section class="notes-panel" data-notes="reflection"><h3>Write your reflection ✎</h3><p>Your reflections stay in this browser and can be added to any time.</p><form class="note-form"><textarea aria-label="Write an overall reflection" placeholder="Looking back on my semester…"></textarea><button class="btn btn-primary" type="submit">Save reflection</button></form><div class="note-list"></div></section>
-    </section>
-
     <section class="page" id="page-maggie">
-      <div class="page-intro"><div class="eyebrow">Chapter 04 · Reading the brief</div><h1>Maggie’s Brief</h1><p class="lead">A dedicated space to untangle the brief: what it asks, what it makes you wonder, and the possibilities you see in it.</p></div><div class="guide-callout"><svg class="mascot-svg pose-read" viewBox="0 0 100 120" aria-hidden="true"><use href="#mascot-base"></use><path class="limb" d="M23 58Q13 60 15 69Q17 77 28 77L36 72 34 65Z"/><path class="limb" d="M77 58Q87 60 85 69Q83 77 72 77L64 72 66 65Z"/><rect class="prop" x="34" y="68" width="32" height="20" rx="3" fill="#81c8ec"/><path class="prop-line" d="M50 69v18M38 74h8M55 74h7"/></svg><div class="guide-bubble"><strong>Let’s read it together</strong>One little piece at a time is a good place to begin.</div></div>
+      <div class="page-intro"><div class="eyebrow">Chapter 03 · Reading the brief</div><h1>Maggie’s Brief</h1><p class="lead">A dedicated space to untangle the brief: what it asks, what it makes you wonder, and the possibilities you see in it.</p></div><div class="guide-callout"><svg class="mascot-svg pose-read" viewBox="0 0 100 120" aria-hidden="true"><use href="#mascot-base"></use><path class="limb" d="M23 58Q13 60 15 69Q17 77 28 77L36 72 34 65Z"/><path class="limb" d="M77 58Q87 60 85 69Q83 77 72 77L64 72 66 65Z"/><rect class="prop" x="34" y="68" width="32" height="20" rx="3" fill="#81c8ec"/><path class="prop-line" d="M50 69v18M38 74h8M55 74h7"/></svg><div class="guide-bubble"><strong>Let’s read it together</strong>One little piece at a time is a good place to begin.</div></div>
       <div class="section-head"><div><h2>Start with a closer look</h2><p>Use these prompts to make the brief your own.</p></div></div>
       <div class="tile-grid searchable">
         <article class="tile"><span class="tile-icon">🔎</span><h3>What is the brief asking?</h3><p>Restate its core challenge in your own words. What feels essential?</p><small>Understand · Unpack</small></article>
@@ -596,7 +590,7 @@
     </section>
 
     <section class="page" id="page-ethos">
-      <div class="page-intro"><div class="eyebrow">Chapter 05 · Ways of working</div><h1>10 Ethos</h1><p class="lead">Ten gentle reminders for the creative process. Come back to one when you need a new perspective or a little encouragement.</p></div><div class="guide-callout"><svg class="mascot-svg pose-point" viewBox="0 0 100 120" aria-hidden="true"><use href="#mascot-base"></use><path class="limb" d="M77 56Q85 54 92 49Q98 45 101 49Q104 53 98 58Q90 65 80 68Z"/><path d="M94 35l2 5 5 1-5 2-2 5-2-5-5-2 5-1z" fill="#ff9a83"/></svg><div class="guide-bubble"><strong>Pick a little reminder</strong>Which ethos would you like to carry with you today?</div></div>
+      <div class="page-intro"><div class="eyebrow">Chapter 04 · Ways of working</div><h1>10 Ethos</h1><p class="lead">Ten gentle reminders for the creative process. Come back to one when you need a new perspective or a little encouragement.</p></div><div class="guide-callout"><svg class="mascot-svg pose-point" viewBox="0 0 100 120" aria-hidden="true"><use href="#mascot-base"></use><path class="limb" d="M77 56Q85 54 92 49Q98 45 101 49Q104 53 98 58Q90 65 80 68Z"/><path d="M94 35l2 5 5 1-5 2-2 5-2-5-5-2 5-1z" fill="#ff9a83"/></svg><div class="guide-bubble"><strong>Pick a little reminder</strong>Which ethos would you like to carry with you today?</div></div>
       <div class="section-head"><div><h2>Keep these close</h2><p>Small principles to guide the way you learn, think and make.</p></div></div>
       <div class="ethos-list searchable">
         <article class="ethos-item"><span class="ethos-num">01</span><div><h3>Stay curious</h3><p>Let questions open doors to ideas you haven’t met yet.</p></div></article>
@@ -612,13 +606,44 @@
       </div>
       <section class="notes-panel" data-notes="ethos"><h3>Which ethos speaks to you? ✎</h3><p>Save a thought about the principles you want to bring into your process.</p><form class="note-form"><textarea aria-label="Write a note about the ethos" placeholder="One ethos I want to practise is…"></textarea><button class="btn btn-primary" type="submit">Save note</button></form><div class="note-list"></div></section>
     </section>
+
+    <section class="page" id="page-exhibition">
+      <div class="page-intro"><div class="eyebrow">Chapter 05 · Sharing the work</div><h1>Exhibition</h1><p class="lead">A space to bring together the finished work, process snapshots, and ideas from the semester.</p></div>
+      <div class="guide-callout"><svg class="mascot-svg pose-cheer" viewBox="0 0 100 120" aria-hidden="true"><use href="#mascot-base"></use><path class="limb" d="M22 50Q14 43 11 35Q8 27 12 23Q17 19 21 24Q27 32 31 44Z"/><path class="limb" d="M78 50Q86 43 89 35Q92 27 88 23Q83 19 79 24Q73 32 69 44Z"/></svg><div class="guide-bubble"><strong>Make space for the work</strong>Gather the outcome and the small decisions, tests, and discoveries that shaped it.</div></div>
+      <div class="section-head"><div><h2>What would you like to show?</h2><p>Use these starting points to shape an exhibition of your process.</p></div></div>
+      <div class="tile-grid searchable">
+        <article class="tile"><span class="tile-icon">🖼️</span><h3>The outcome</h3><p>Show the final idea, prototype, or service concept your group created.</p><small>Share · Present</small></article>
+        <article class="tile"><span class="tile-icon">🧩</span><h3>Behind the process</h3><p>Bring in drafts, experiments, feedback, and moments that changed the direction.</p><small>Make · Iterate</small></article>
+        <article class="tile"><span class="tile-icon">💬</span><h3>What we learned</h3><p>Capture the insight or question you want visitors to take with them.</p><small>Reflect · Connect</small></article>
+      </div>
+    </section>
+
+    <section class="page" id="page-reflection">
+      <div class="page-intro"><div class="eyebrow">Chapter 06 · Looking back</div><h1>Overall Reflection</h1><p class="lead">Pause for a moment. Notice what has grown, what still feels uncertain, and what you’d like to take into the next chapter.</p></div><div class="guide-callout"><svg class="mascot-svg pose-think" viewBox="0 0 100 120" aria-hidden="true"><use href="#mascot-base"></use><path class="limb" d="M77 59Q85 55 79 49Q75 45 72 49L67 57Q65 63 71 65Z"/><circle cx="80" cy="34" r="4" fill="#fff06a" stroke="#151515" stroke-width="2"/><circle cx="88" cy="26" r="6" fill="#fff06a" stroke="#151515" stroke-width="2"/></svg><div class="guide-bubble"><strong>Take a little pause</strong>There’s no wrong place to start reflecting.</div></div>
+      <div class="section-head"><div><h2>Reflection prompts</h2><p>There’s no right order. Start wherever feels true.</p></div></div>
+      <div class="tile-grid searchable">
+        <article class="tile"><span class="tile-icon">🌤️</span><h3>A moment that stayed with me</h3><p>Which class, conversation or piece of work keeps coming back to mind? Why?</p><small>Look back · Notice</small></article>
+        <article class="tile"><span class="tile-icon">🧭</span><h3>Something I see differently</h3><p>Has an idea, process or assumption shifted for you over the semester?</p><small>Change · Perspective</small></article>
+        <article class="tile"><span class="tile-icon">🌿</span><h3>A stretch beyond the familiar</h3><p>What challenged you, and what did that experience teach you about yourself?</p><small>Challenge · Growth</small></article>
+        <article class="tile"><span class="tile-icon">🔭</span><h3>What I want to carry forward</h3><p>Which skill, question or way of working do you want to keep practising?</p><small>Next steps · Possibility</small></article>
+      </div>
+      <section class="notes-panel" data-notes="reflection"><h3>Write your reflection ✎</h3><p>Your reflections stay in this browser and can be added to any time.</p><form class="note-form"><textarea aria-label="Write an overall reflection" placeholder="Looking back on my semester…"></textarea><button class="btn btn-primary" type="submit">Save reflection</button></form><div class="note-list"></div></section>
+    </section>
+
+
+
+    
+
+    
+
+    
     <div class="empty-search" id="emptySearch">No notes or prompts match that search yet. Try another word.</div>
     <footer class="footer"><span>Creative Process Journal · Grace Wong</span><span>A living document · Made with curiosity ✳</span></footer>
   </main>
 </div>
 <script>
-  const pages=["home","weekly","group","reflection","maggie","ethos"];
-  const labels={home:"Home",weekly:"Weekly Lessons",group:"Group Project",reflection:"Overall Reflection",maggie:"Maggie's Brief",ethos:"10 Ethos"};
+  const pages=["home","weekly","group","maggie","ethos","exhibition","reflection"];
+  const labels={home:"Home",weekly:"Weekly Lessons",group:"Group Project",maggie:"Maggie's Brief",ethos:"10 Ethos",exhibition:"Exhibition",reflection:"Overall Reflection"};
   function showPage(name){if(!pages.includes(name))name="home";document.querySelectorAll(".page").forEach(p=>p.classList.toggle("active",p.id==="page-"+name));document.querySelectorAll("[data-page]").forEach(b=>b.classList.toggle("active",b.dataset.page===name));document.getElementById("crumbCurrent").textContent="/ "+labels[name];document.getElementById("searchInput").value="";filterSearch("");window.scrollTo({top:0,behavior:"smooth"});}
   document.querySelectorAll("[data-page]").forEach(b=>b.addEventListener("click",()=>showPage(b.dataset.page)));
   document.querySelectorAll("[data-week-target]").forEach(button=>button.addEventListener("click",()=>{const target=document.getElementById(button.dataset.weekTarget);if(target){document.querySelectorAll("[data-week-target]").forEach(item=>item.classList.toggle("active",item===button));target.scrollIntoView({behavior:"smooth",block:"start"});}}));
