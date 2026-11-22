@@ -99,6 +99,16 @@
     .week1-gallery-title img.week1-playground-inline{aspect-ratio:16/9;object-fit:cover;border:1px solid #a9d8c2;border-radius:12px}
     .week1-playground figcaption{padding:7px 4px 1px;font-size:12px;color:#547568}
     @media(max-width:760px){.week1-gallery{grid-template-columns:1fr;margin:14px 12px 8px;padding:9px;gap:10px}.week1-gallery-title img{aspect-ratio:2.4/1}.week1-gallery-title img.week1-gallery-extra{aspect-ratio:2.25/1}.week1-gallery-title img.week1-playground-inline{aspect-ratio:16/9}}
+
+    /* Keep both Week 1 gallery columns flush and let the class photo fill its track. */
+    .week1-gallery{align-items:stretch}
+    .week1-gallery-main{display:flex;padding:0}
+    .week1-gallery-main img{width:100%;height:100%;min-height:100%;aspect-ratio:auto;object-fit:cover}
+    .week1-gallery-title{display:grid;grid-template-rows:auto auto auto;align-content:stretch;gap:12px;padding:0;border:0!important;border-radius:0!important;background:transparent!important}
+    .week1-gallery-title img{width:100%;height:auto;min-height:0;aspect-ratio:2.4/1;object-fit:contain}
+    .week1-gallery-title img.week1-gallery-extra{aspect-ratio:2.25/1}
+    .week1-gallery-title img.week1-playground-inline{aspect-ratio:16/9}
+    @media(max-width:760px){.week1-gallery-main img{height:auto;min-height:0;aspect-ratio:4/3}.week1-gallery-title{gap:10px}}
   </style>
 </head>
 <body>
