@@ -379,6 +379,14 @@
     @media(max-width:900px){.group-phase-gallery{grid-template-columns:repeat(2,minmax(0,1fr))}.group-phase-gallery img{height:200px}}
     @media(max-width:760px){.group-phase-banner{padding:20px 18px}.group-phase-banner .week-number-sticker{width:62px;height:62px;flex-basis:62px}.group-phase-banner .week-number-sticker b{font-size:22px}.group-phase-gallery{margin:13px 12px 10px;padding:7px;gap:8px}.group-phase-gallery img{height:170px}.group-phase-moments{grid-template-columns:1fr;margin:12px 12px 15px;gap:9px}.group-phase-moments .moment-mint{grid-column:auto}.group-phase-moments .moment-card{padding:15px}.group-phase-moments .moment-copy p{font-size:12px}}
     @media(max-width:480px){.group-phase-gallery{grid-template-columns:1fr 1fr}.group-phase-gallery img{height:145px}}
+  
+    .group-phase-gallery figure{position:relative;height:210px}
+    .group-phase-gallery img{height:100%;object-fit:cover;object-position:center;background:#f2eee5}
+    .group-phase-gallery figure:first-child{container-type:size}
+    @supports(width:1cqw){.group-phase-gallery figure:first-child img{width:100cqh;height:100cqw;max-width:none;object-fit:cover;transform:rotate(90deg)}}
+    @media(max-width:900px){.group-phase-gallery figure{height:200px}.group-phase-gallery img{height:100%}}
+    @media(max-width:760px){.group-phase-gallery figure{height:170px}.group-phase-gallery img{height:100%}}
+    @media(max-width:480px){.group-phase-gallery figure{height:145px}.group-phase-gallery img{height:100%}}
   </style>
 </head>
 <body>
