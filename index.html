@@ -227,6 +227,21 @@
     .week-shortcut-ten{background:#c88b2e;border:0;color:#fffefa;box-shadow:0 3px 0 rgba(137,91,28,.24)}.week-shortcut-ten i{color:#fff06a}
     @media(max-width:760px){.week-entry-ten{border-width:6px;border-radius:24px}.week-entry-ten .week-banner{padding:20px 18px}.week10-photo-gallery{margin:14px 12px 8px;padding:9px;gap:9px}.week10-moments{margin:15px 12px;gap:9px}.week-entry-ten .moment-card{padding:15px}}
     @media(max-width:560px){.week10-photo-gallery{grid-template-columns:1fr}.week10-photo-gallery img{aspect-ratio:16/10}}
+
+    .week-entry-eleven{border:8px solid #db806c;border-radius:32px;background:#fffaf0;box-shadow:0 10px 0 rgba(194,100,79,.18);scroll-snap-align:start}
+    .week-entry-eleven .week-banner{background:linear-gradient(120deg,#ffe2d8 0%,#fff0df 56%,#f8e3e5 100%);border-bottom:8px solid #f2c6b8;padding:32px 36px}
+    .week-entry-eleven .week-banner:after{background:rgba(255,255,255,.3)}
+    .week-entry-eleven .week-banner h2{color:#553447}.week-entry-eleven .week-banner p{color:#68585a}.week-entry-eleven .week-banner .week-overline{color:#a15345}
+    .week-entry-eleven .week-banner .week-overline i,.week-entry-eleven .week-banner .week-spark{color:#ed7658}
+    .week-number-sticker-eleven{background:#fff06a;color:#553447;border:3px solid #fffefa;box-shadow:0 4px 0 rgba(194,100,79,.2)}
+    .week11-photo-gallery{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin:22px 26px 12px;padding:12px;border:2px solid #e2a08e;border-radius:24px;background:#fffaf0;box-shadow:0 6px 0 rgba(194,100,79,.12);align-items:stretch}
+    .week11-photo-gallery figure{margin:0;min-width:0;overflow:hidden;border:1px solid rgba(85,52,71,.16);border-radius:14px;background:#417cb4}
+    .week11-photo-gallery img{display:block;width:100%;height:100%;aspect-ratio:16/10;object-fit:contain}
+    .week11-moments{grid-template-columns:1fr;margin:24px 38px 26px;gap:15px}
+    .week-entry-eleven .moment-card{grid-column:auto;border:0;border-left:8px solid #db806c;border-radius:7px 18px 18px 7px;box-shadow:0 4px 0 rgba(83,52,71,.06);padding:21px 23px}
+    .week-shortcut-eleven{background:#c76652;border:0;color:#fffefa;box-shadow:0 3px 0 rgba(133,68,55,.24)}.week-shortcut-eleven i{color:#fff06a}
+    @media(max-width:760px){.week-entry-eleven{border-width:6px;border-radius:24px}.week-entry-eleven .week-banner{padding:20px 18px}.week11-photo-gallery{margin:14px 12px 8px;padding:9px;gap:9px}.week11-moments{margin:15px 12px;gap:9px}.week-entry-eleven .moment-card{padding:15px}}
+    @media(max-width:560px){.week11-photo-gallery{grid-template-columns:1fr}.week11-photo-gallery img{aspect-ratio:16/10}}
   </style>
 </head>
 <body>
@@ -294,7 +309,7 @@
 
       <nav class="week-shortcuts" aria-label="Jump to a week">
         <div class="shortcut-copy"><span>JUMP TO A WEEK</span><small>Or scroll through the learning journey</small></div>
-        <div class="week-shortcut-list"><button class="week-shortcut active" data-week-target="week-1"><b>01</b><span>Week 1</span><i>↘</i></button><button class="week-shortcut week-shortcut-two" data-week-target="week-2"><b>02</b><span>Week 2</span><i>↘</i></button><button class="week-shortcut week-shortcut-three" data-week-target="week-3"><b>03</b><span>Week 3</span><i>↘</i></button><button class="week-shortcut week-shortcut-fourfive" data-week-target="week-4-5"><b>04–05</b><span>Week 4–5</span><i>↘</i></button><button class="week-shortcut week-shortcut-seven" data-week-target="week-7-9"><b>07–09</b><span>Week 7–9</span><i>↘</i></button><button class="week-shortcut week-shortcut-ten" data-week-target="week-10"><b>10</b><span>Week 10</span><i>↘</i></button><div class="weeks-coming">6 chapters · scroll to continue ✦</div></div>
+        <div class="week-shortcut-list"><button class="week-shortcut active" data-week-target="week-1"><b>01</b><span>Week 1</span><i>↘</i></button><button class="week-shortcut week-shortcut-two" data-week-target="week-2"><b>02</b><span>Week 2</span><i>↘</i></button><button class="week-shortcut week-shortcut-three" data-week-target="week-3"><b>03</b><span>Week 3</span><i>↘</i></button><button class="week-shortcut week-shortcut-fourfive" data-week-target="week-4-5"><b>04–05</b><span>Week 4–5</span><i>↘</i></button><button class="week-shortcut week-shortcut-seven" data-week-target="week-7-9"><b>07–09</b><span>Week 7–9</span><i>↘</i></button><button class="week-shortcut week-shortcut-ten" data-week-target="week-10"><b>10</b><span>Week 10</span><i>↘</i></button><button class="week-shortcut week-shortcut-eleven" data-week-target="week-11"><b>11</b><span>Week 11</span><i>↘</i></button><div class="weeks-coming">7 chapters · scroll to continue ✦</div></div>
       </nav>
 
       <div class="week-stream">
@@ -435,6 +450,23 @@
 
           <div class="week-moments week10-moments">
             <article class="moment-card moment-yellow"><div class="moment-number">01</div><div class="moment-copy"><span class="moment-kicker">TOOLKITS</span><h3>Visual prompts make space for conversation</h3><div class="week10-toolkit-list" aria-label="Activities used"><span>Brain dump</span><span>Journey Mapping</span><span>Alternate worlds</span><span>Rose Bud Thorn</span><span>Creative Matrix</span></div><p>I thought these activities were really good in facilitating conversations and breaking the ice. As it was done in smaller groups, it made the experience more comfortable and less intimidating. The images and visual prompts act as great anchors when you're staring at a blank page, allowing users to think and reflect through them.</p></div><span class="moment-doodle" aria-hidden="true">✦</span></article>
+          </div>
+        </article>
+
+        <article class="week-entry week-entry-eleven searchable" id="week-11">
+          <header class="week-banner week-banner-eleven">
+            <div><span class="week-overline">WEEK 11 <i>·</i> SMALL STEPS, SHARED PURPOSE</span><h2>Believing in what people can do</h2><p>Reflections on persistence, supportive teams, and inclusive experiences.</p></div>
+            <div class="week-number-sticker week-number-sticker-eleven" aria-hidden="true"><small>MY</small><b>11</b><span>week</span></div>
+            <span class="week-spark" aria-hidden="true">✳</span>
+          </header>
+
+          <div class="week11-photo-gallery" aria-label="Week 11 visual guides">
+            <figure><img src="assets/week-11/feedback-visuals.png" alt="Two illustrated feedback cards showing positive and negative reactions" loading="lazy"></figure>
+            <figure><img src="assets/week-11/visual-guides.png" alt="Examples of a visual checklist and a social story used to guide activities" loading="lazy"></figure>
+          </div>
+
+          <div class="week-moments week11-moments">
+            <article class="moment-card moment-peach"><div class="moment-number">01</div><div class="moment-copy"><span class="moment-kicker">MAG’S SHARING</span><h3>Small initiatives can make a real difference</h3><p>Hearing Mag share her work at Rainbow Centre highlighted the power of focusing on what PWDs can do, creating ways for them to give back to society. I thought it was very admirable of her persistence for her goals. I think passion played a huge part in this and it was felt through her sharing. Through her sharing, it also showed how vital a supportive team is when pushing for change against skepticism, even if it is small. It doesn't matter how small it can be as long as you believe and trust the process. It is heartwarming to see that there are so many initiatives and activities done for PWDs and their caregivers for a better experience, which felt very inclusive. The visuals to guide them are also simple and easy to understand, I thought that was a really good touch that we could also apply to our designs.</p></div><span class="moment-doodle" aria-hidden="true">♡</span></article>
           </div>
         </article>
       </div>
