@@ -436,6 +436,26 @@
     @media(max-width:900px){.group-phase-two-gallery{grid-template-columns:repeat(2,minmax(0,1fr))}.group-phase-two-gallery figure{height:200px}}
     @media(max-width:760px){.group-phase-two-gallery{margin:13px 12px 10px;padding:7px;gap:8px}.group-phase-two-gallery figure{height:170px}.group-phase-two-moments{margin:12px 12px 15px}.group-phase-two-moments .moment-card{padding:15px}.group-phase-two-moments .moment-copy p{font-size:12px}}
     @media(max-width:480px){.group-phase-two-gallery{grid-template-columns:repeat(2,minmax(0,1fr))}.group-phase-two-gallery figure{height:145px}}
+  
+    .exhibition-feature{margin:22px 0 28px;overflow:hidden;border:3px solid #e99a7d;border-radius:28px;background:#fffefa;box-shadow:0 7px 0 rgba(230,83,46,.11)}
+    .exhibition-banner{position:relative;display:flex;align-items:center;justify-content:space-between;gap:18px;overflow:hidden;padding:25px 30px;background:linear-gradient(115deg,#fff19b 0%,#ffeda7 54%,#ffd9bf 100%);border-bottom:5px solid #fff}
+    .exhibition-banner:after{content:"";position:absolute;right:82px;top:-98px;width:250px;height:250px;border-radius:50%;background:rgba(255,255,255,.35);pointer-events:none}
+    .exhibition-banner>div,.exhibition-banner .week-spark{z-index:1}
+    .exhibition-banner h2{margin:8px 0 4px;color:var(--ink);font:700 clamp(25px,3vw,36px)/1.1 var(--round)}
+    .exhibition-banner p{margin:0;color:#586e7c;font-size:13px}
+    .exhibition-banner .week-number-sticker{background:#e95b38}
+    .exhibition-banner .week-spark{color:#f17e67}
+    .exhibition-gallery{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:11px;margin:19px 22px 14px;padding:10px;border:2px solid #f3c5a9;border-radius:22px;background:#fff8ed}
+    .exhibition-gallery figure{height:auto;aspect-ratio:4/3;min-width:0;margin:0;overflow:hidden;border:2px solid #fff;border-radius:15px;background:#f2eee5;box-shadow:0 4px 0 rgba(83,52,71,.06)}
+    .exhibition-gallery img{display:block;width:100%;height:100%;object-fit:cover;object-position:center}
+    .exhibition-stories{display:grid;grid-template-columns:1fr;gap:12px;margin:16px 22px 22px}
+    .exhibition-stories .moment-card{align-items:flex-start}
+    .exhibition-stories .moment-copy{max-width:none}
+    .exhibition-stories .moment-copy p{font-size:13px;line-height:1.8}
+    .exhibition-stories .moment-copy p+p{margin-top:10px}
+    @media(max-width:900px){.exhibition-gallery{grid-template-columns:repeat(2,minmax(0,1fr))}}
+    @media(max-width:760px){.exhibition-banner{padding:20px 18px}.exhibition-gallery{margin:13px 12px 10px;padding:7px;gap:8px}.exhibition-stories{margin:12px 12px 15px}.exhibition-stories .moment-card{padding:15px}.exhibition-stories .moment-copy p{font-size:12px}}
+    @media(max-width:480px){.exhibition-gallery{grid-template-columns:repeat(2,minmax(0,1fr))}}
   </style>
 </head>
 <body>
@@ -796,12 +816,21 @@
     <section class="page" id="page-exhibition">
       <div class="page-intro"><div class="eyebrow">Chapter 05 · Sharing the work</div><h1>Exhibition</h1><p class="lead">A space to bring together the finished work, process snapshots, and ideas from the semester.</p></div>
       <div class="guide-callout"><svg class="mascot-svg pose-cheer" viewBox="0 0 100 120" aria-hidden="true"><use href="#mascot-base"></use><path class="limb" d="M22 50Q14 43 11 35Q8 27 12 23Q17 19 21 24Q27 32 31 44Z"/><path class="limb" d="M78 50Q86 43 89 35Q92 27 88 23Q83 19 79 24Q73 32 69 44Z"/></svg><div class="guide-bubble"><strong>Make space for the work</strong>Gather the outcome and the small decisions, tests, and discoveries that shaped it.</div></div>
-      <div class="section-head"><div><h2>What would you like to show?</h2><p>Use these starting points to shape an exhibition of your process.</p></div></div>
-      <div class="tile-grid searchable">
-        <article class="tile"><span class="tile-icon">🖼️</span><h3>The outcome</h3><p>Show the final idea, prototype, or service concept your group created.</p><small>Share · Present</small></article>
-        <article class="tile"><span class="tile-icon">🧩</span><h3>Behind the process</h3><p>Bring in drafts, experiments, feedback, and moments that changed the direction.</p><small>Make · Iterate</small></article>
-        <article class="tile"><span class="tile-icon">💬</span><h3>What we learned</h3><p>Capture the insight or question you want visitors to take with them.</p><small>Reflect · Connect</small></article>
-      </div>
+      <section class="exhibition-feature" aria-labelledby="exhibition-title">
+        <header class="exhibition-banner"><div><span class="week-overline">CHAPTER 05 <i>·</i> LIVE TESTING &amp; SHARED LEARNING</span><h2 id="exhibition-title">Learning together in the exhibition</h2><p>Testing what we made, and listening to what the experience meant to others.</p></div><div class="week-number-sticker" aria-hidden="true"><small>CHAPTER</small><b>05</b><span>share</span></div><span class="week-spark" aria-hidden="true">✳</span></header>
+        <div class="exhibition-gallery" aria-label="Exhibition photos">
+          <figure><img src="assets/exhibition-1.png" alt="June, Jiaying and caregivers reading the simplified booklet together"></figure>
+          <figure><img src="assets/exhibition-2.png" alt="Visitors gathering inside the inclusive carriage exhibit"></figure>
+          <figure><img src="assets/exhibition-3.png" alt="An advocate using a phone to test the interactive social story"></figure>
+          <figure><img src="assets/exhibition-4.png" alt="June and Jiaying sharing the booklet during the exhibition"></figure>
+          <figure><img src="assets/exhibition-5.png" alt="An advocate using the grab pole while others observe"></figure>
+          <figure><img src="assets/exhibition-6.png" alt="Visitors exploring the cabin and testing its features together"></figure>
+        </div>
+        <div class="exhibition-stories">
+          <article class="moment-card moment-blue"><span class="moment-number">01</span><div class="moment-copy"><span class="moment-kicker">LIVE TESTING · JUNE, JIAYING &amp; THEIR CAREGIVERS</span><h3>Testing Live with June, Jiaying &amp; Their Caregivers</h3><p>Inviting June, Jiaying, and their caregivers to the exhibition was such a meaningful moment, seeing them walk into the space and interact with what we had built with them made all the late nights worth it. We asked them to test our social story by guiding us from Dhoby Ghaut MRT to Temasek Shophouse. Overall, they navigated the route smoothly, though they occasionally paused unsure of when to tap "Next" which can be a really helpful UI detail for us to refine in future iterations. Midway through the walk, Jiaying led so confidently that she eventually said, "Okay, I don't need to use it anymore, I know how to get there," and so we passed the lead over to June. Watching that happen felt so rewarding because it meant the story was doing its job: building familiarity until they felt confident on their own. Back at the exhibition, both the advocates and their caregivers loved the calm cabin, and they tested out the grab poles and caregiver seats while sharing candid feedback. Seeing June and Jiaying read through the simplified booklet alongside their caregivers and explain the concepts back to us in their own words was truly heartwarming, and I really hope we get more opportunities to collaborate with them again.</p></div></article>
+          <article class="moment-card moment-mint"><span class="moment-number">02</span><div class="moment-copy"><span class="moment-kicker">A SECOND VISIT · DADC DANCERS</span><h3>Welcoming the DADC Dancers</h3><p>When June and Jiaying returned for a second visit with the other DADC dancers, it was so sweet watching Jiaying immediately step into the role of tour guide, bringing along her own copy of the booklet to walk everyone through the carriage, with June jumping in to guide parts of it too. Seeing all of them inside the cabin, exploring and testing the features together, brought the space to life.</p><p>That visit also taught me something about how they see themselves. They were surprisingly observant of seniors, even reenacting how older commuters move. They also assumed most of our inclusive features, like the VI zone, caregiver seats, and LD screen, were designed mainly for the elderly. When we asked if they think the caregiver seats were for them, most said no; they didn't view themselves as needing extra care because they are trained to be independent, to speak up when they need a pole or seat, and give up their seats to seniors. One conversation in particular really stayed with me: realizing just how deeply trust matters to them. They don't simply take advice from strangers or even doctors, for guidance to truly land, it has to come from people they know, trust and feel safe with.</p></div></article>
+        </div>
+      </section>
     </section>
 
     <section class="page" id="page-reflection">
