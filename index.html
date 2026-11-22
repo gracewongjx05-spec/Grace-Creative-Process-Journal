@@ -116,6 +116,23 @@
     .week2-photo-gallery .week2-photo-portrait img{object-fit:contain;background:#ecefe4}
     @media(max-width:760px){.week2-photo-gallery{margin:14px 12px 8px;padding:9px;gap:9px;border-radius:18px}}
     @media(max-width:540px){.week2-photo-gallery{grid-template-columns:1fr}.week2-photo-gallery img{aspect-ratio:16/10}.week2-photo-gallery .week2-photo-portrait img{aspect-ratio:4/3;object-fit:contain}}
+
+    .week-entry-three{border:6px solid #4f9dc4;border-radius:28px;background:#f1f9fc;box-shadow:0 9px 0 rgba(62,135,175,.17);scroll-snap-align:start}
+    .week-entry-three .week-banner{background:linear-gradient(120deg,#d9f2fc 0%,#e6efff 58%,#f2e8ff 100%);border-bottom:8px solid #b8deed;padding:32px 36px}
+    .week-entry-three .week-banner h2{color:#553447}
+    .week-entry-three .week-banner p{color:#4f6b7c}
+    .week-entry-three .week-banner .week-overline{color:#367fa4}
+    .week-entry-three .week-banner .week-overline i,.week-entry-three .week-banner .week-spark{color:#ed7658}
+    .week-number-sticker-three{background:#fff06a;color:#553447;border:3px solid #fffefa;box-shadow:0 4px 0 rgba(62,135,175,.2)}
+    .week3-photo-gallery{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin:22px 26px 12px;padding:12px;border:2px solid #83bdd8;border-radius:24px;background:#e8f5fa;box-shadow:0 6px 0 rgba(62,135,175,.13);align-items:stretch}
+    .week3-photo-gallery figure{margin:0;min-width:0;overflow:hidden;border:1px solid rgba(55,111,140,.2);border-radius:14px;background:#f8fbfc}
+    .week3-photo-gallery img{display:block;width:100%;height:100%;aspect-ratio:16/9;object-fit:cover}
+    .week3-moments{grid-template-columns:repeat(2,minmax(0,1fr));margin:24px 38px 26px;gap:15px}
+    .week-entry-three .moment-card{grid-column:auto;border:0;border-left:8px solid #4c8db5;border-radius:7px 18px 18px 7px;box-shadow:0 4px 0 rgba(83,52,71,.06);padding:21px 23px}
+    .week-entry-three .moment-lilac{border-left-color:#8e86b8}
+    .week-entry-three .moment-mint{grid-column:1/-1;border-left-color:#6d9a70}
+    .week-shortcut-three{background:#d9f2fc;border:2px solid #83bdd8;color:#35586b;box-shadow:0 3px 0 rgba(62,135,175,.17)}
+    @media(max-width:760px){.week-entry-three{border-width:5px;border-radius:23px}.week-entry-three .week-banner{padding:20px 18px}.week3-photo-gallery{grid-template-columns:1fr;margin:14px 12px 8px;padding:9px;gap:9px}.week3-photo-gallery img{aspect-ratio:16/10}.week3-moments{grid-template-columns:1fr;margin:15px 12px;gap:9px}.week-entry-three .moment-card{grid-column:auto;border:2px solid #fff;border-left-width:7px;border-radius:16px;padding:15px}}
   </style>
 </head>
 <body>
@@ -183,7 +200,7 @@
 
       <nav class="week-shortcuts" aria-label="Jump to a week">
         <div class="shortcut-copy"><span>JUMP TO A WEEK</span><small>Or scroll through the learning journey</small></div>
-        <div class="week-shortcut-list"><button class="week-shortcut active" data-week-target="week-1"><b>01</b><span>Week 1</span><i>↘</i></button><button class="week-shortcut week-shortcut-two" data-week-target="week-2"><b>02</b><span>Week 2</span><i>↘</i></button><div class="weeks-coming">2 weeks · scroll to continue ✦</div></div>
+        <div class="week-shortcut-list"><button class="week-shortcut active" data-week-target="week-1"><b>01</b><span>Week 1</span><i>↘</i></button><button class="week-shortcut week-shortcut-two" data-week-target="week-2"><b>02</b><span>Week 2</span><i>↘</i></button><button class="week-shortcut week-shortcut-three" data-week-target="week-3"><b>03</b><span>Week 3</span><i>↘</i></button><div class="weeks-coming">3 weeks · scroll to continue ✦</div></div>
       </nav>
 
       <div class="week-stream">
@@ -253,6 +270,27 @@
           </div>
 
           <div class="week-endnote week-endnote-two"><span>✦</span><p><strong>Week 2 takeaway</strong><br>Access is shaped by spaces, tools, trust, and the way we respond to one another.</p><span>✦</span></div>
+        </article>
+
+        <article class="week-entry week-entry-three searchable" id="week-3">
+          <header class="week-banner week-banner-three">
+            <div><span class="week-overline">WEEK 03 <i>·</i> SUPPORT, COMMUNICATION & CARE</span><h2>Noticing the people behind access</h2><p>Reflections on public transport, sign language, and the support caregivers need.</p></div>
+            <div class="week-number-sticker week-number-sticker-three" aria-hidden="true"><small>MY</small><b>03</b><span>week</span></div>
+            <span class="week-spark" aria-hidden="true">✳</span>
+          </header>
+
+          <div class="week3-photo-gallery" aria-label="Week 3 class photographs">
+            <figure><img src="assets/week-3/class-photo-1.png" alt="Classmates gathered in a classroom after a sharing about sign language" loading="lazy"></figure>
+            <figure><img src="assets/week-3/class-photo-2.png" alt="Classmates gathered together in the classroom" loading="lazy"></figure>
+          </div>
+
+          <div class="week-moments week3-moments">
+            <article class="moment-card moment-blue"><div class="moment-number">01</div><div class="moment-copy"><span class="moment-kicker">JUSTIN & LENNY’S SHARING</span><h3>Support shapes the experience</h3><p>Seeing Justin’s genuine joy for public transport reinforced why transit should be accessible to everyone. Justin’s sharing about how his pillars of support helped improve his experience highlighted the importance of having support systems. Lenny’s perspective as a brother and caregiver was deeply inspiring as caring isn't easy, yet bringing patience and positivity to it transforms the experience. Knowing caregivers actively read up to understand their loved ones' conditions also showed how much room there is to raise broader public awareness.</p></div><span class="moment-doodle" aria-hidden="true">✦</span></article>
+
+            <article class="moment-card moment-lilac"><div class="moment-number">02</div><div class="moment-copy"><span class="moment-kicker">GOPI’S SHARING</span><h3>Communication goes beyond spoken words</h3><p>Even before YN translated Gopi’s sign language, I could read so much through his facial expressions and gestures. It reminded me that communication goes far beyond spoken words and made me feel that learning basic sign language and being attentive to body language should be something we all practice. I think that sign language is really beautiful and I feel very inspired to learn.</p></div><span class="moment-doodle" aria-hidden="true">♡</span></article>
+
+            <article class="moment-card moment-mint"><div class="moment-number">03</div><div class="moment-copy"><span class="moment-kicker">SUPPORTING CAREGIVERS</span><h3>Caregivers need an ecosystem of support</h3><p>Behind every care recipient is often a caregiver carrying an invisible mental, physical, and financial load, frequently sacrificing their own hobbies and worrying about what will happen to their loved ones in the future. Therefore, I think good social design shouldn't overlook caregivers; they need ecosystems of support too to keep going. I wish that despite the challenges and difficulties, they will enjoy the process and find little joys in their caregiving experience.</p></div><span class="moment-doodle" aria-hidden="true">✿</span></article>
+          </div>
         </article>
       </div>
     </section>
