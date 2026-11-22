@@ -304,6 +304,18 @@
     .ethos-principle span{display:grid;place-items:center;flex:0 0 31px;height:31px;border-radius:50%;background:#fffefa;color:#e6532e;font:800 12px var(--round)}
     .ethos-principle strong{padding-top:4px;color:var(--ink);font:700 15px/1.45 var(--round)}
     @media(max-width:760px){.ethos-reflection-card{padding:20px 18px}.ethos-principle-grid{grid-template-columns:1fr;gap:9px}.ethos-principle:last-child{grid-column:auto}.ethos-principle{padding:14px}}
+  
+    .maggie-pdf-feature{display:grid;grid-template-columns:minmax(0,1.08fr) minmax(280px,.92fr);gap:28px;align-items:stretch;margin:24px 0 30px;padding:14px;border:3px solid #efb39e;border-radius:30px;background:#fffaf0;box-shadow:0 7px 0 rgba(230,83,46,.12)}
+    .maggie-pdf-cover{min-height:320px;overflow:hidden;border:2px solid #fff;border-radius:22px;background:#f8f5ec;box-shadow:0 4px 0 rgba(83,52,71,.08)}
+    .maggie-pdf-cover img{display:block;width:100%;height:100%;min-height:320px;object-fit:cover}
+    .maggie-pdf-copy{display:flex;flex-direction:column;justify-content:center;padding:clamp(16px,3vw,38px)}
+    .maggie-pdf-kicker{color:#397fa8;font-size:11px;font-weight:800;letter-spacing:.16em}
+    .maggie-pdf-copy h2{margin:10px 0 12px;color:var(--ink);font:700 clamp(30px,4vw,46px)/1.05 var(--round)}
+    .maggie-pdf-copy p{max-width:480px;margin:0 0 24px;color:#586b79;font-size:15px;line-height:1.75}
+    .maggie-pdf-action{display:flex;align-items:center;gap:16px;flex-wrap:wrap}
+    .maggie-pdf-action .btn{padding:14px 22px;font-size:14px}
+    .maggie-pdf-note{color:#7c8790;font-size:12px;font-weight:600}
+    @media(max-width:760px){.maggie-pdf-feature{grid-template-columns:1fr;gap:8px;padding:10px}.maggie-pdf-cover,.maggie-pdf-cover img{min-height:0;aspect-ratio:1.65/1}.maggie-pdf-copy{padding:20px 16px 22px}}
   </style>
 </head>
 <body>
@@ -593,14 +605,15 @@
 
     <section class="page" id="page-maggie">
       <div class="page-intro"><div class="eyebrow">Chapter 03 · Reading the brief</div><h1>Maggie’s Brief</h1><p class="lead">A dedicated space to untangle the brief: what it asks, what it makes you wonder, and the possibilities you see in it.</p></div><div class="guide-callout"><svg class="mascot-svg pose-read" viewBox="0 0 100 120" aria-hidden="true"><use href="#mascot-base"></use><path class="limb" d="M23 58Q13 60 15 69Q17 77 28 77L36 72 34 65Z"/><path class="limb" d="M77 58Q87 60 85 69Q83 77 72 77L64 72 66 65Z"/><rect class="prop" x="34" y="68" width="32" height="20" rx="3" fill="#81c8ec"/><path class="prop-line" d="M50 69v18M38 74h8M55 74h7"/></svg><div class="guide-bubble"><strong>Let’s read it together</strong>One little piece at a time is a good place to begin.</div></div>
-      <div class="section-head"><div><h2>Start with a closer look</h2><p>Use these prompts to make the brief your own.</p></div></div>
-      <div class="tile-grid searchable">
-        <article class="tile"><span class="tile-icon">🔎</span><h3>What is the brief asking?</h3><p>Restate its core challenge in your own words. What feels essential?</p><small>Understand · Unpack</small></article>
-        <article class="tile"><span class="tile-icon">❔</span><h3>What questions does it raise?</h3><p>Collect the things you want to clarify, investigate or challenge.</p><small>Question · Explore</small></article>
-        <article class="tile"><span class="tile-icon">💡</span><h3>Where might it lead?</h3><p>Capture early ideas without needing to decide which one is right yet.</p><small>Imagine · Generate</small></article>
-        <article class="tile"><span class="tile-icon">📝</span><h3>What will success look like?</h3><p>Think about who the work is for and what you hope it will make possible.</p><small>Purpose · Intention</small></article>
-      </div>
-      <section class="notes-panel" data-notes="maggie"><h3>Make sense of the brief ✎</h3><p>Add your interpretation, questions or ideas as they take shape.</p><form class="note-form"><textarea aria-label="Write a note about Maggie's brief" placeholder="The part of the brief I keep thinking about…"></textarea><button class="btn btn-primary" type="submit">Save note</button></form><div class="note-list"></div></section>
+      <section class="maggie-pdf-feature" aria-labelledby="maggie-pdf-title">
+        <div class="maggie-pdf-cover"><img src="assets/maggie-centre-cover.png" alt="The Care Centre — Where caregivers can be cared for too"></div>
+        <div class="maggie-pdf-copy">
+          <span class="maggie-pdf-kicker">MAGGIE CENTRE · PROJECT BRIEF</span>
+          <h2 id="maggie-pdf-title">The Care Centre</h2>
+          <p>A place where caregivers can be cared for too. Open the brief to explore the project and its ideas.</p>
+          <div class="maggie-pdf-action"><a class="btn btn-primary" href="https://drive.google.com/uc?export=download&amp;id=1Il3dUefToahmWXScelbGi2RtxzZFHqJp" target="_blank" rel="noopener noreferrer">Download the PDF <span aria-hidden="true">↓</span></a><span class="maggie-pdf-note">PDF · Maggie Centre</span></div>
+        </div>
+      </section>
     </section>
 
     <section class="page" id="page-ethos">
