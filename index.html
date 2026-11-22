@@ -89,6 +89,18 @@
     .week-shortcut i{color:#fff06a}
     .week-shortcut-two{background:#71896f;border-color:#71896f;color:#fffefa;box-shadow:0 3px 0 rgba(53,82,57,.22)}
 
+
+    .week1-gallery{display:grid;grid-template-columns:minmax(0,1.55fr) minmax(260px,.9fr);gap:16px;margin:22px 26px 12px;padding:12px;border:2px solid #f0c887;border-radius:24px;background:#fff7e2;box-shadow:0 6px 0 rgba(237,118,88,.12)}
+    .week1-gallery figure{margin:0;min-width:0;overflow:hidden;border-radius:16px;background:#fffefa;border:1px solid rgba(85,52,71,.12)}
+    .week1-gallery-main img{display:block;width:100%;aspect-ratio:4/3;object-fit:cover}
+    .week1-gallery-title img{display:block;width:100%;aspect-ratio:16/9;object-fit:contain;background:#eeecee}
+    .week1-gallery figcaption{display:grid;gap:3px;padding:11px 14px 13px;color:var(--ink)}
+    .week1-gallery figcaption span{font-size:10px;font-weight:800;letter-spacing:.12em;color:#d96c4c}
+    .week1-gallery figcaption strong{font-family:'Baloo 2',sans-serif;font-size:16px;line-height:1.2}
+    .week1-playground{margin:14px 0 0;padding:8px;border:1px solid #a9d8c2;border-radius:16px;background:#f1fbf5}
+    .week1-playground img{display:block;width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:10px}
+    .week1-playground figcaption{padding:7px 4px 1px;font-size:12px;color:#547568}
+    @media(max-width:760px){.week1-gallery{grid-template-columns:1fr;margin:14px 12px 8px;padding:9px;gap:10px}.week1-gallery-title img{aspect-ratio:16/8}.week1-gallery figcaption{padding:9px 11px}}
   </style>
 </head>
 <body>
@@ -167,18 +179,23 @@
             <span class="week-spark" aria-hidden="true">✳</span>
           </header>
 
-          <figure class="week-photo-placeholder" role="img" aria-label="Landscape photo placeholder for Week 1">
-            <div class="photo-placeholder-art"><span class="photo-sun"></span><span class="photo-hill"></span><span class="photo-hill second"></span><span class="photo-mark">▧</span></div>
-            <figcaption><span class="photo-label">WEEK 01 · IMAGE PLACEHOLDER</span><strong>Class moments & visual cues</strong><small>Landscape photos can be added here when they’re ready.</small></figcaption>
-            <span class="photo-ratio">16:9</span>
-          </figure>
+          <div class="week1-gallery" aria-label="Week 1 class photographs">
+            <figure class="week1-gallery-main">
+              <img src="assets/week-1/class-group.png" alt="The class gathered together after a lesson on autism and inclusion" loading="lazy">
+              <figcaption><span>WEEK 01 · CLASS MOMENT</span><strong>Learning together</strong></figcaption>
+            </figure>
+            <figure class="week1-gallery-title">
+              <img src="assets/week-1/session-title.png" alt="Presentation title: Uplifting Experiences for People with Disabilities" loading="lazy">
+              <figcaption><span>THE SESSION</span><strong>Uplifting Experiences for People with Disabilities</strong></figcaption>
+            </figure>
+          </div>
 
           <div class="week-moments">
             <article class="moment-card moment-blue"><div class="moment-number">01</div><div class="moment-copy"><span class="moment-kicker">ICEBREAKERS & VISUAL CUES</span><h3>Images made it easier to connect</h3><p>Using photos to describe our week took the pressure off eye contact and awkward silences. It was a great reminder that simple visual prompts can lower social anxiety and make communication more accessible for everyone.</p></div><span class="moment-doodle" aria-hidden="true">✳</span></article>
 
             <article class="moment-card moment-yellow"><div class="moment-number">02</div><div class="moment-copy"><span class="moment-kicker">REDEFINING DISABILITY</span><h3>Barriers can depend on the environment</h3><p>The impulse and memory exercises made me realize that everyone experiences barriers depending on the environment—even something as simple as not speaking a language.</p><blockquote class="moment-quote">“Who actually defines ‘disability’?”</blockquote><p>It made me question who actually defines “disability,” and highlighted the importance of recognizing our own limitations rather than viewing disability as an “other.” Got to know myself a little more, a very good activity to test our abilities and strength and to know what we can work on.</p></div><span class="moment-doodle" aria-hidden="true">✦</span></article>
 
-            <article class="moment-card moment-mint"><div class="moment-number">03</div><div class="moment-copy"><span class="moment-kicker">INCLUSION THROUGH EMPATHY</span><h3>Inclusion begins with noticing</h3><p>Watching the playground video showed that inclusion doesn't happen automatically; it starts when people step into someone else’s shoes, recognize exclusion, and actively pull others in before the barriers can be against disability. It was really heartwarming when the other children helped to pull the kid back in.</p></div><span class="moment-doodle" aria-hidden="true">♡</span></article>
+            <article class="moment-card moment-mint"><div class="moment-number">03</div><div class="moment-copy"><span class="moment-kicker">INCLUSION THROUGH EMPATHY</span><h3>Inclusion begins with noticing</h3><p>Watching the playground video showed that inclusion doesn't happen automatically; it starts when people step into someone else’s shoes, recognize exclusion, and actively pull others in before the barriers can be against disability. It was really heartwarming when the other children helped to pull the kid back in.</p><figure class="week1-playground"><img src="assets/week-1/playground-inclusion.png" alt="Animated playground scene showing children reaching out to include one another" loading="lazy"><figcaption>A moment of children helping one another join in.</figcaption></figure></div><span class="moment-doodle" aria-hidden="true">♡</span></article>
           </div>
 
           <section class="people-feature">
