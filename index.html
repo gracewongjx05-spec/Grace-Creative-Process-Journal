@@ -359,6 +359,26 @@
     .reflection-slide-three:not(.week-entry) header{background:linear-gradient(110deg,#ffe8ad 0%,#ffd8c9 100%)}
     .reflection-slide-three:not(.week-entry) .reflection-number{background:#e6532e;box-shadow:0 4px 0 rgba(174,62,39,.16)}
     .reflection-slide-three:not(.week-entry) .reflection-spark{color:#e6532e}
+  
+    .group-phase{margin:22px 0 28px;overflow:hidden;border:3px solid #efa27d;border-radius:28px;background:#fffefa;box-shadow:0 7px 0 rgba(230,83,46,.11)}
+    .group-phase-banner{position:relative;display:flex;align-items:center;justify-content:space-between;gap:18px;overflow:hidden;padding:25px 30px;background:linear-gradient(115deg,#fff19b 0%,#ffeda7 54%,#ffd9bf 100%);border-bottom:5px solid #fff}
+    .group-phase-banner:after{content:"";position:absolute;right:82px;top:-98px;width:250px;height:250px;border-radius:50%;background:rgba(255,255,255,.35);pointer-events:none}
+    .group-phase-banner>div,.group-phase-banner .week-spark{z-index:1}
+    .group-phase-banner h2{margin:8px 0 4px;color:var(--ink);font:700 clamp(25px,3vw,36px)/1.1 var(--round)}
+    .group-phase-banner p{margin:0;color:#586e7c;font-size:13px}
+    .group-phase-banner .week-number-sticker{background:#e95b38}
+    .group-phase-banner .week-spark{color:#f17e67}
+    .group-phase-gallery{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:11px;margin:19px 22px 14px;padding:10px;border:2px solid #f3c5a9;border-radius:22px;background:#fff8ed}
+    .group-phase-gallery figure{display:grid;place-items:center;min-width:0;margin:0;overflow:hidden;border:2px solid #fff;border-radius:15px;background:#f2eee5;box-shadow:0 4px 0 rgba(83,52,71,.06)}
+    .group-phase-gallery img{display:block;width:100%;height:210px;object-fit:contain;background:#f2eee5}
+    .group-phase-moments{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:13px;margin:16px 22px 22px}
+    .group-phase-moments .moment-card{align-items:flex-start;min-width:0}
+    .group-phase-moments .moment-mint{grid-column:1/-1}
+    .group-phase-moments .moment-copy{max-width:none}
+    .group-phase-moments .moment-copy p{font-size:13px;line-height:1.8}
+    @media(max-width:900px){.group-phase-gallery{grid-template-columns:repeat(2,minmax(0,1fr))}.group-phase-gallery img{height:200px}}
+    @media(max-width:760px){.group-phase-banner{padding:20px 18px}.group-phase-banner .week-number-sticker{width:62px;height:62px;flex-basis:62px}.group-phase-banner .week-number-sticker b{font-size:22px}.group-phase-gallery{margin:13px 12px 10px;padding:7px;gap:8px}.group-phase-gallery img{height:170px}.group-phase-moments{grid-template-columns:1fr;margin:12px 12px 15px;gap:9px}.group-phase-moments .moment-mint{grid-column:auto}.group-phase-moments .moment-card{padding:15px}.group-phase-moments .moment-copy p{font-size:12px}}
+    @media(max-width:480px){.group-phase-gallery{grid-template-columns:1fr 1fr}.group-phase-gallery img{height:145px}}
   </style>
 </head>
 <body>
