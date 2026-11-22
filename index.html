@@ -178,6 +178,22 @@
     #page-weekly #week-3 .week-banner .week-spark{color:#ed7658}
     #page-weekly #week-3 .week-banner h2{color:#553447}
     #page-weekly #week-3 .week-banner p{color:#4f6b7c}
+
+    .week-entry-fourfive{border:8px solid #9274ad;border-radius:32px;background:#fffaf0;box-shadow:0 10px 0 rgba(117,89,148,.19);scroll-snap-align:start}
+    .week-entry-fourfive .week-banner{background:linear-gradient(120deg,#f4e7f5 0%,#fff0dd 56%,#f8e3dc 100%);border-bottom:8px solid #ead8ec;padding:32px 36px}
+    .week-entry-fourfive .week-banner:after{background:rgba(255,255,255,.3)}
+    .week-entry-fourfive .week-banner h2{color:#553447}.week-entry-fourfive .week-banner p{color:#695d6e}.week-entry-fourfive .week-banner .week-overline{color:#795b91}
+    .week-entry-fourfive .week-banner .week-overline i,.week-entry-fourfive .week-banner .week-spark{color:#ed7658}
+    .week-number-sticker-fourfive{background:#fff06a;color:#553447;border:3px solid #fffefa;box-shadow:0 4px 0 rgba(117,89,148,.2)}.week-number-sticker-fourfive b{font-size:20px}
+    .week45-photo-gallery{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin:22px 26px 12px;padding:12px;border:2px solid #b39ac6;border-radius:24px;background:#fffaf0;box-shadow:0 6px 0 rgba(117,89,148,.12);align-items:stretch}
+    .week45-photo-gallery figure{margin:0;min-width:0;overflow:hidden;border:1px solid rgba(85,52,71,.16);border-radius:14px;background:#f8f4f8}
+    .week45-photo-gallery img{display:block;width:100%;height:100%;aspect-ratio:3/2;object-fit:cover}
+    .week45-moments{grid-template-columns:repeat(2,minmax(0,1fr));margin:24px 38px 26px;gap:15px}
+    .week-entry-fourfive .moment-card{grid-column:auto;border:0;border-left:8px solid #9274ad;border-radius:7px 18px 18px 7px;box-shadow:0 4px 0 rgba(83,52,71,.06);padding:21px 23px}
+    .week-entry-fourfive .moment-lilac{border-left-color:#b18bbd}.week-entry-fourfive .moment-mint{grid-column:1/-1;border-left-color:#6d9a70}
+    .week-shortcut-fourfive{background:#795b91;border:0;color:#fffefa;box-shadow:0 3px 0 rgba(78,56,99,.24)}.week-shortcut-fourfive i{color:#fff06a}.week-shortcut-fourfive b{font-size:12px}
+    @media(max-width:760px){.week-entry-fourfive{border-width:6px;border-radius:24px}.week-entry-fourfive .week-banner{padding:20px 18px}.week45-photo-gallery{margin:14px 12px 8px;padding:9px;gap:9px}.week45-moments{margin:15px 12px;gap:9px}.week-entry-fourfive .moment-card{padding:15px}}
+    @media(max-width:560px){.week45-photo-gallery{grid-template-columns:1fr}.week45-photo-gallery img{aspect-ratio:16/10}.week45-moments{grid-template-columns:1fr}.week-entry-fourfive .moment-mint{grid-column:auto}}
   </style>
 </head>
 <body>
@@ -245,7 +261,7 @@
 
       <nav class="week-shortcuts" aria-label="Jump to a week">
         <div class="shortcut-copy"><span>JUMP TO A WEEK</span><small>Or scroll through the learning journey</small></div>
-        <div class="week-shortcut-list"><button class="week-shortcut active" data-week-target="week-1"><b>01</b><span>Week 1</span><i>↘</i></button><button class="week-shortcut week-shortcut-two" data-week-target="week-2"><b>02</b><span>Week 2</span><i>↘</i></button><button class="week-shortcut week-shortcut-three" data-week-target="week-3"><b>03</b><span>Week 3</span><i>↘</i></button><div class="weeks-coming">3 weeks · scroll to continue ✦</div></div>
+        <div class="week-shortcut-list"><button class="week-shortcut active" data-week-target="week-1"><b>01</b><span>Week 1</span><i>↘</i></button><button class="week-shortcut week-shortcut-two" data-week-target="week-2"><b>02</b><span>Week 2</span><i>↘</i></button><button class="week-shortcut week-shortcut-three" data-week-target="week-3"><b>03</b><span>Week 3</span><i>↘</i></button><button class="week-shortcut week-shortcut-fourfive" data-week-target="week-4-5"><b>04–05</b><span>Week 4–5</span><i>↘</i></button><div class="weeks-coming">4 chapters · scroll to continue ✦</div></div>
       </nav>
 
       <div class="week-stream">
@@ -335,6 +351,24 @@
             <article class="moment-card moment-lilac"><div class="moment-number">02</div><div class="moment-copy"><span class="moment-kicker">GOPI’S SHARING</span><h3>Communication goes beyond spoken words</h3><p>Even before YN translated Gopi’s sign language, I could read so much through his facial expressions and gestures. It reminded me that communication goes far beyond spoken words and made me feel that learning basic sign language and being attentive to body language should be something we all practice. I think that sign language is really beautiful and I feel very inspired to learn.</p></div><span class="moment-doodle" aria-hidden="true">♡</span></article>
 
             <article class="moment-card moment-mint"><div class="moment-number">03</div><div class="moment-copy"><span class="moment-kicker">SUPPORTING CAREGIVERS</span><h3>Caregivers need an ecosystem of support</h3><p>Behind every care recipient is often a caregiver carrying an invisible mental, physical, and financial load, frequently sacrificing their own hobbies and worrying about what will happen to their loved ones in the future. Therefore, I think good social design shouldn't overlook caregivers; they need ecosystems of support too to keep going. I wish that despite the challenges and difficulties, they will enjoy the process and find little joys in their caregiving experience.</p></div><span class="moment-doodle" aria-hidden="true">✿</span></article>
+          </div>
+        </article>
+
+        <article class="week-entry week-entry-fourfive searchable" id="week-4-5">
+          <header class="week-banner week-banner-fourfive">
+            <div><span class="week-overline">WEEK 04–05 <i>·</i> ARCHITECTURE, AGENCY & CARE</span><h2>Spaces designed for dignity and wellbeing</h2><p>Reflections on Deaf-friendly design, supportive villages, and places of calm.</p></div>
+            <div class="week-number-sticker week-number-sticker-fourfive" aria-hidden="true"><small>MY</small><b>04–05</b><span>weeks</span></div>
+            <span class="week-spark" aria-hidden="true">✳</span>
+          </header>
+          <div class="week45-photo-gallery" aria-label="Week 4 and 5 photographs">
+            <figure><img src="assets/week-4-5/architecture.png" alt="A modern low-rise building with glass walls beside a reflecting pond" loading="lazy"></figure>
+            <figure><img src="assets/week-4-5/community-village.png" alt="An outdoor pedestrian plaza with a fountain and people sitting nearby" loading="lazy"></figure>
+            <figure><img src="assets/week-4-5/lifetown.png" alt="An indoor miniature town street with shops and road markings" loading="lazy"></figure>
+          </div>
+          <div class="week-moments week45-moments">
+            <article class="moment-card moment-blue"><div class="moment-number">01</div><div class="moment-copy"><span class="moment-kicker">DEAF-FRIENDLY ARCHITECTURE</span><h3>Small details can make movement easier</h3><p>Designing for the Deaf community shifts the focus to their sight. The use of mirrors, clear glass doors, and wide corridors aren't just aesthetic choices, they allow people to spot approaching movement and sign comfortably while walking. It reminded me how design should be intentional and minor treatment details can sometimes seem so little yet boosts another person's experience.</p></div><span class="moment-doodle" aria-hidden="true">✦</span></article>
+            <article class="moment-card moment-lilac"><div class="moment-number">02</div><div class="moment-copy"><span class="moment-kicker">DEMENTIA & ID/AUTISM VILLAGES</span><h3>Build around abilities and agency</h3><p>I think it is very meaningful to have purpose-built villages that balances safety with independence. Rather than simply "looking after" residents, it teaches life skills like time management and financial literacy. These spaces focus on their capabilities and potential, respecting the individual’s agency. I think it is rather rare nowadays, because most people see their disabilities first than their abilities. The Lifetown Shoppes sound like a really fun place to be and I wouldn't mind spending my day there.</p></div><span class="moment-doodle" aria-hidden="true">♡</span></article>
+            <article class="moment-card moment-mint"><div class="moment-number">03</div><div class="moment-copy"><span class="moment-kicker">MAGGIE’S CENTRE</span><h3>Spaces of calm can change the experience</h3><p>Having calm, non-clinical spaces like Maggie’s Centres is very purposeful, especially in a fast-paced, high-stress city like Singapore. These spaces can take so much fear out of hospital visits and also provide a positive experience to users. Every country should definitely have a space like this.</p></div><span class="moment-doodle" aria-hidden="true">✿</span></article>
           </div>
         </article>
       </div>
