@@ -258,6 +258,21 @@
     .week-shortcut-twelve{background:#625f9c;border:0;color:#fffefa;box-shadow:0 3px 0 rgba(69,66,119,.24)}.week-shortcut-twelve i{color:#fff06a}
     @media(max-width:760px){.week-entry-twelve{border-width:6px;border-radius:24px}.week-entry-twelve .week-banner{padding:20px 18px}.week12-photo-gallery{margin:14px 12px 8px;padding:9px;gap:9px}.week12-moments{margin:15px 12px;gap:9px}.week-entry-twelve .moment-card{padding:15px}}
     @media(max-width:560px){.week12-photo-gallery{grid-template-columns:1fr}.week12-photo-gallery img{aspect-ratio:16/10}.week12-moments{grid-template-columns:1fr}.week-entry-twelve .moment-mint{grid-column:auto}}
+
+    .week-entry-thirteen{border:8px solid #c76f82;border-radius:32px;background:#fffaf0;box-shadow:0 10px 0 rgba(169,85,103,.18);scroll-snap-align:start}
+    .week-entry-thirteen .week-banner{background:linear-gradient(120deg,#ffe3e4 0%,#fff0e5 56%,#f4e3ee 100%);border-bottom:8px solid #edc9d0;padding:32px 36px}
+    .week-entry-thirteen .week-banner:after{background:rgba(255,255,255,.3)}
+    .week-entry-thirteen .week-banner h2{color:#553447}.week-entry-thirteen .week-banner p{color:#6c5965}.week-entry-thirteen .week-banner .week-overline{color:#955c70}
+    .week-entry-thirteen .week-banner .week-overline i,.week-entry-thirteen .week-banner .week-spark{color:#ed7658}
+    .week-number-sticker-thirteen{background:#fff06a;color:#553447;border:3px solid #fffefa;box-shadow:0 4px 0 rgba(169,85,103,.2)}
+    .week13-photo-gallery{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin:22px 26px 12px;padding:12px;border:2px solid #d69aa7;border-radius:24px;background:#fffaf0;box-shadow:0 6px 0 rgba(169,85,103,.12);align-items:stretch}
+    .week13-photo-gallery figure{margin:0;min-width:0;overflow:hidden;border:1px solid rgba(85,52,71,.16);border-radius:14px;background:#f6eeee}
+    .week13-photo-gallery img{display:block;width:100%;height:100%;aspect-ratio:16/10;object-fit:cover}
+    .week13-moments{grid-template-columns:1fr;margin:24px 38px 26px;gap:15px}
+    .week-entry-thirteen .moment-card{grid-column:auto;border:0;border-left:8px solid #c76f82;border-radius:7px 18px 18px 7px;box-shadow:0 4px 0 rgba(83,52,71,.06);padding:21px 23px}
+    .week-shortcut-thirteen{background:#a9576b;border:0;color:#fffefa;box-shadow:0 3px 0 rgba(117,58,73,.24)}.week-shortcut-thirteen i{color:#fff06a}
+    @media(max-width:760px){.week-entry-thirteen{border-width:6px;border-radius:24px}.week-entry-thirteen .week-banner{padding:20px 18px}.week13-photo-gallery{margin:14px 12px 8px;padding:9px;gap:9px}.week13-moments{margin:15px 12px;gap:9px}.week-entry-thirteen .moment-card{padding:15px}}
+    @media(max-width:560px){.week13-photo-gallery{grid-template-columns:1fr}.week13-photo-gallery img{aspect-ratio:16/10}}
   </style>
 </head>
 <body>
@@ -325,7 +340,7 @@
 
       <nav class="week-shortcuts" aria-label="Jump to a week">
         <div class="shortcut-copy"><span>JUMP TO A WEEK</span><small>Or scroll through the learning journey</small></div>
-        <div class="week-shortcut-list"><button class="week-shortcut active" data-week-target="week-1"><b>01</b><span>Week 1</span><i>↘</i></button><button class="week-shortcut week-shortcut-two" data-week-target="week-2"><b>02</b><span>Week 2</span><i>↘</i></button><button class="week-shortcut week-shortcut-three" data-week-target="week-3"><b>03</b><span>Week 3</span><i>↘</i></button><button class="week-shortcut week-shortcut-fourfive" data-week-target="week-4-5"><b>04–05</b><span>Week 4–5</span><i>↘</i></button><button class="week-shortcut week-shortcut-seven" data-week-target="week-7-9"><b>07–09</b><span>Week 7–9</span><i>↘</i></button><button class="week-shortcut week-shortcut-ten" data-week-target="week-10"><b>10</b><span>Week 10</span><i>↘</i></button><button class="week-shortcut week-shortcut-eleven" data-week-target="week-11"><b>11</b><span>Week 11</span><i>↘</i></button><button class="week-shortcut week-shortcut-twelve" data-week-target="week-12"><b>12</b><span>Week 12</span><i>↘</i></button><div class="weeks-coming">8 chapters · scroll to continue ✦</div></div>
+        <div class="week-shortcut-list"><button class="week-shortcut active" data-week-target="week-1"><b>01</b><span>Week 1</span><i>↘</i></button><button class="week-shortcut week-shortcut-two" data-week-target="week-2"><b>02</b><span>Week 2</span><i>↘</i></button><button class="week-shortcut week-shortcut-three" data-week-target="week-3"><b>03</b><span>Week 3</span><i>↘</i></button><button class="week-shortcut week-shortcut-fourfive" data-week-target="week-4-5"><b>04–05</b><span>Week 4–5</span><i>↘</i></button><button class="week-shortcut week-shortcut-seven" data-week-target="week-7-9"><b>07–09</b><span>Week 7–9</span><i>↘</i></button><button class="week-shortcut week-shortcut-ten" data-week-target="week-10"><b>10</b><span>Week 10</span><i>↘</i></button><button class="week-shortcut week-shortcut-eleven" data-week-target="week-11"><b>11</b><span>Week 11</span><i>↘</i></button><button class="week-shortcut week-shortcut-twelve" data-week-target="week-12"><b>12</b><span>Week 12</span><i>↘</i></button><button class="week-shortcut week-shortcut-thirteen" data-week-target="week-13"><b>13</b><span>Week 13</span><i>↘</i></button><div class="weeks-coming">9 chapters · scroll to continue ✦</div></div>
       </nav>
 
       <div class="week-stream">
@@ -507,6 +522,23 @@
             <article class="moment-card moment-peach"><div class="moment-number">03</div><div class="moment-copy"><span class="moment-kicker">ACCOUNTABILITY OVER BLAME</span><h3>Ask how to make things better</h3><p>The video on blame was enlightening. When something goes wrong, our natural instinct is to look for someone else to point fingers at, mostly because owning up to mistakes feels uncomfortable and threatens our pride. Yet pushing responsibility onto others or lashing out in frustration never actually fixes the issue; it only creates tension and leaves both sides worse off. It made me realize how important it is to actively shift our mindset from fault-finding to accountability. Instead of wasting energy asking "Whose fault is this?”, the healthier or more constructive question is "How do we make this better and prevent it from happening next time?"</p></div><span class="moment-doodle" aria-hidden="true">✦</span></article>
 
             <article class="moment-card moment-mint"><div class="moment-number">04</div><div class="moment-copy"><span class="moment-kicker">LISTENING WITHOUT EGO</span><h3>Make room for people’s perspectives</h3><p>There is a huge difference between simply hearing someone and truly listening to them. Because social design is about designing with people rather than just for them, we have to enter conversations with genuine curiosity and zero judgment. Creating a safe space where people feel truly heard and understood, and slowly earning their trust doesn’t happen overnight; it takes real patience and time. That’s why leaving our ego at the door is so crucial. When we’re caught up in pride, dominating the room, or constantly trying to prove we’re right, we close ourselves off from empathy. Only when we let go of needing to be the "expert" can we stay open-minded and actually see the world from someone else’s perspective.</p></div><span class="moment-doodle" aria-hidden="true">♡</span></article>
+          </div>
+        </article>
+
+        <article class="week-entry week-entry-thirteen searchable" id="week-13">
+          <header class="week-banner week-banner-thirteen">
+            <div><span class="week-overline">WEEK 13 <i>·</i> INCLUSION STARTS WITHIN</span><h2>Let inclusion begin with “I”</h2><p>Reflecting on wellbeing, inner conviction, and the small steps that move change forward.</p></div>
+            <div class="week-number-sticker week-number-sticker-thirteen" aria-hidden="true"><small>MY</small><b>13</b><span>week</span></div>
+            <span class="week-spark" aria-hidden="true">✳</span>
+          </header>
+
+          <div class="week13-photo-gallery" aria-label="Week 13 reflection visuals">
+            <figure><img src="assets/week-13/nourish-deplete.png" alt="Reflection prompt contrasting what nourishes you with what depletes you" loading="lazy"></figure>
+            <figure><img src="assets/week-13/inclusion-animation.png" alt="Animated scene of a small character meeting a bird" loading="lazy"></figure>
+          </div>
+
+          <div class="week-moments week13-moments">
+            <article class="moment-card moment-peach"><div class="moment-number">01</div><div class="moment-copy"><span class="moment-kicker">INCLUSION STARTS WITH “I”</span><h3>Let the work nourish the person doing it</h3><p>This idea resonated with me deeply because meaningful change always has to start from within. We can’t authentically advocate for something unless we genuinely believe in it and practice it in our own lives first. Just like we can only care sustainably for others when we also care for ourselves, we can’t design inclusive systems out in the world if we aren't actively practicing inclusion in our own immediate communities. When those values are rooted firmly inside us, they become more than just nice ideas, they give us the conviction to bring others along. Doing the "what nourishes me vs. what depletes me" activity was such a helpful check-in to recognize what drains my energy and what habits I need to keep or let go of to protect my well-being. The work we do shouldn't leave us running on empty; it needs to nourish us so we have the stamina to push through the harder moments. Ultimately, having trust and faith in the process, even when our steps feel small, is what builds the inner strength to move big mountains and the resilience to stand firm when things get challenging.</p></div><span class="moment-doodle" aria-hidden="true">♡</span></article>
           </div>
         </article>
       </div>
